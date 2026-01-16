@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Inventar {
 
-    
 
     ArrayList <String> predmety;
 
