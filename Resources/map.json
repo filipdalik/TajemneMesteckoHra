@@ -1,0 +1,77 @@
+{
+  "map": {
+    "start": "Okraj města",
+    "locations": [
+      {
+        "name": "Okraj města",
+        "description": "Probudil ses u rozbité silnice poblíž zničeného auta.",
+        "exits": {
+          "rovně": "Náměstí"
+        }
+      },
+      {
+        "name": "Sklad",
+        "description": "Sklad plný materiálů a nářadí.",
+        "exits": {
+          "zpět": "Okraj města",
+          "rovně": "Náměstí"
+        }
+      },
+      {
+        "name": "Náměstí",
+        "description": "Rozpadlé náměstí s nefunkční kašnou. U kašny sedí vodník.",
+        "exits": {
+          "doprava": "Obytná čtvrť",
+          "doleva": "Sklad",
+          "rovně": "Park",
+          "zpět": "Sklad"
+        }
+      },
+      {
+        "name": "Obytná čtvrť",
+        "description": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
+        "exits": {
+          "zpět": "Náměstí"
+        }
+      },
+      {
+        "name": "Radnice",
+        "description": "Budova, kde sídlí starostka města.",
+        "exits": {
+          "zpět": "Náměstí"
+        }
+      },
+      {
+        "name": "Park",
+        "description": "Zarostlý park plný nepořádku. Pracuje zde zahradnice.",
+        "exits": {
+          "zpět": "Náměstí",
+          "rovně": "Policejní stanice",
+          "doleva": "Nemocnice"
+        }
+      },
+      {
+        "name": "Nemocnice",
+        "description": "Silně poškozená nemocnice. Nachází se zde starý doktor.",
+        "exits": {
+          "zpět": "Park"
+        }
+      },
+      {
+        "name": "Policejní stanice",
+        "description": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
+        "exits": {
+          "zpět": "Park",
+          "rovně": "Elektrárna"
+        }
+      },
+      {
+        "name": "Elektrárna",
+        "description": "Klíčová budova pro celé město. Hlídá ji elektrikář.",
+        "exits": {
+          "zpět": "Policejní stanice"
+        }
+      }
+    ]
+  }
+}
