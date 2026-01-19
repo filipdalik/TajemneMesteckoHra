@@ -6,7 +6,11 @@
         "jmeno": "Okraj města",
         "popis": "Probudil ses u rozbité silnice poblíž zničeného auta.",
         "vychody": {
-          "rovne": "Namesti"
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Namesti",
+          "zpet": null
+          
         }
       },
 
@@ -15,8 +19,10 @@
         "jmeno": "Sklad",
         "popis": "Sklad plný materiálů a nářadí.",
         "vychody": {
-          "zpet": "Okraj_mesta",
-          "rovne": "Namesti"
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Namesti",
+          "zpet": "Okraj_mesta"
         }
       },
 
@@ -37,6 +43,9 @@
         "jmeno": "Obytná čtvrť",
         "popis": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
         "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
           "zpet": "Namesti"
         }
       },
@@ -46,6 +55,9 @@
         "jmeno": "Radnice",
         "popis": "Budova, kde sídlí starostka města.",
         "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
           "zpet": "Namesti"
         }
       },
@@ -55,9 +67,10 @@
         "jmeno": "Park",
         "popis": "Zarostlý park plný nepořádku. Pracuje zde zahradnice.",
         "vychody": {
-          "zpet": "Namesti",
+          "doprava": null,
+          "doleva": "Nemocnice",
           "rovne": "Policejni_stanice",
-          "doleva": "Nemocnice"
+          "zpet": "Namesti" 
         }
       },
 
@@ -66,6 +79,9 @@
         "jmeno": "Nemocnice",
         "popis": "Silně poškozená nemocnice. Nachází se zde starý doktor.",
         "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
           "zpet": "Park"
         }
       },
@@ -75,8 +91,10 @@
         "jmeno": "Policejní stanice",
         "popis": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
         "vychody": {
-          "zpet": "Park",
-          "rovne": "Elektrarna"
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Elektrarna",
+          "zpet": "Park"
         }
       },
 
@@ -85,6 +103,9 @@
         "jmeno": "Elektrárna",
         "popis": "Klíčová budova pro celé město. Hlídá ji elektrikář.",
         "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
           "zpet": "Policejni_stanice"
         }
       }
