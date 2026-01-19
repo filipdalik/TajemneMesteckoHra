@@ -1,91 +1,91 @@
 {
-  "map": {
-    "locations": {
+  "mapa": {
+    "lokace": {
       "Okraj_mesta": {
         "id": "Okraj_mesta",
-        "name": "Okraj města",
-        "description": "Probudil ses u rozbité silnice poblíž zničeného auta.",
-        "exits": {
-          "rovně": "Namesti"
+        "jmeno": "Okraj města",
+        "popis": "Probudil ses u rozbité silnice poblíž zničeného auta.",
+        "vychody": {
+          "rovne": "Namesti"
         }
       },
 
       "Sklad": {
         "id": "Sklad",
-        "name": "Sklad",
-        "description": "Sklad plný materiálů a nářadí.",
-        "exits": {
-          "zpět": "Okraj_mesta",
-          "rovně": "Namesti"
+        "jmeno": "Sklad",
+        "popis": "Sklad plný materiálů a nářadí.",
+        "vychody": {
+          "zpet": "Okraj_mesta",
+          "rovne": "Namesti"
         }
       },
 
       "Namesti": {
         "id": "Namesti",
-        "name": "Náměstí",
-        "description": "Rozpadlé náměstí s nefunkční kašnou. U kašny sedí vodník.",
-        "exits": {
+        "jmeno": "Náměstí",
+        "popis": "Rozpadlé náměstí s nefunkční kašnou. U kašny sedí vodník.",
+        "vychody": {
           "doprava": "Obytna_ctvrt",
           "doleva": "Radnice",
-          "rovně": "Park",
-          "zpět": "Sklad"
+          "rovne": "Park",
+          "zpet": "Sklad"
         }
       },
 
       "Obytna_ctvrt": {
         "id": "Obytna_ctvrt",
-        "name": "Obytná čtvrť",
-        "description": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
-        "exits": {
-          "zpět": "Namesti"
+        "jmeno": "Obytná čtvrť",
+        "popis": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
+        "vychody": {
+          "zpet": "Namesti"
         }
       },
 
       "Radnice": {
         "id": "Radnice",
-        "name": "Radnice",
-        "description": "Budova, kde sídlí starostka města.",
-        "exits": {
-          "zpět": "Namesti"
+        "jmeno": "Radnice",
+        "popis": "Budova, kde sídlí starostka města.",
+        "vychody": {
+          "zpet": "Namesti"
         }
       },
 
       "Park": {
         "id": "Park",
-        "name": "Park",
-        "description": "Zarostlý park plný nepořádku. Pracuje zde zahradnice.",
-        "exits": {
-          "zpět": "Namesti",
-          "rovně": "Policejni_stanice",
+        "jmeno": "Park",
+        "popis": "Zarostlý park plný nepořádku. Pracuje zde zahradnice.",
+        "vychody": {
+          "zpet": "Namesti",
+          "rovne": "Policejni_stanice",
           "doleva": "Nemocnice"
         }
       },
 
       "Nemocnice": {
         "id": "Nemocnice",
-        "name": "Nemocnice",
-        "description": "Silně poškozená nemocnice. Nachází se zde starý doktor.",
-        "exits": {
-          "zpět": "Park"
+        "jmeno": "Nemocnice",
+        "popis": "Silně poškozená nemocnice. Nachází se zde starý doktor.",
+        "vychody": {
+          "zpet": "Park"
         }
       },
 
       "Policejni_stanice": {
         "id": "Policejni_stanice",
-        "name": "Policejní stanice",
-        "description": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
-        "exits": {
-          "zpět": "Park",
-          "rovně": "Elektrarna"
+        "jmeno": "Policejní stanice",
+        "popis": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
+        "vychody": {
+          "zpet": "Park",
+          "rovne": "Elektrarna"
         }
       },
 
       "Elektrarna": {
         "id": "Elektrarna",
-        "name": "Elektrárna",
-        "description": "Klíčová budova pro celé město. Hlídá ji elektrikář.",
-        "exits": {
-          "zpět": "Policejni_stanice"
+        "jmeno": "Elektrárna",
+        "popis": "Klíčová budova pro celé město. Hlídá ji elektrikář.",
+        "vychody": {
+          "zpet": "Policejni_stanice"
         }
       }
     }
