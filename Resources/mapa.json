@@ -1,0 +1,114 @@
+{
+  "mapa": {
+    "lokace": [
+      {
+        "id": "Okraj_mesta",
+        "jmeno": "Okraj města",
+        "popis": "Probudil ses u rozbité silnice poblíž zničeného auta.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Namesti",
+          "zpet": null
+        },
+        "npc": null
+      },
+      {
+        "id": "Sklad",
+        "jmeno": "Sklad",
+        "popis": "Sklad plný materiálů a nářadí.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Namesti",
+          "zpet": "Okraj_mesta"
+        },
+        "npc": null
+      },
+      {
+        "id": "Namesti",
+        "jmeno": "Náměstí",
+        "popis": "Rozpadlé náměstí s nefunkční kašnou. U kašny sedí vodník.",
+        "vychody": {
+          "doprava": "Obytna_ctvrt",
+          "doleva": "Radnice",
+          "rovne": "Park",
+          "zpet": "Sklad"
+        },
+        "npc":"Vodnik"
+      },
+      {
+        "id": "Obytna_ctvrt",
+        "jmeno": "Obytná čtvrť",
+        "popis": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
+          "zpet": "Namesti"
+        },
+        "npc": "Vesnican"
+      },
+      {
+        "id": "Radnice",
+        "jmeno": "Radnice",
+        "popis": "Budova, kde sídlí starostka města.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
+          "zpet": "Namesti"
+        },
+        "npc": "Starostka"
+      },
+      {
+        "id": "Park",
+        "jmeno": "Park",
+        "popis": "Zarostlý park plný nepořádku. Pracuje zde zahradnice.",
+        "vychody": {
+          "doprava": null,
+          "doleva": "Nemocnice",
+          "rovne": "Policejni_stanice",
+          "zpet": "Namesti"
+        },
+        "npc": "Zahradnice"
+      },
+      {
+        "id": "Nemocnice",
+        "jmeno": "Nemocnice",
+        "popis": "Silně poškozená nemocnice. Nachází se zde starý doktor.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
+          "zpet": "Park"
+        },
+        "npc": "Stary_doktor"
+      },
+      {
+        "id": "Policejni_stanice",
+        "jmeno": "Policejní stanice",
+        "popis": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": "Elektrarna",
+          "zpet": "Park"
+        },
+        "npc": "Policista"
+      },
+      {
+        "id": "Elektrarna",
+        "jmeno": "Elektrárna",
+        "popis": "Klíčová budova pro celé město. Hlídá ji elektrikář.",
+        "vychody": {
+          "doprava": null,
+          "doleva": null,
+          "rovne": null,
+          "zpet": "Policejni_stanice"
+        },
+        "npc": "Elektrikar"
+      }
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-package Charakters;
+package NPC;
 
 public class Npc {
     protected String jmeno;
