@@ -1,7 +1,14 @@
 package Commands;
 
 public class CommandOfenz implements Command{
-    public void execute(String[] args) {
-        System.out.println("Útok");
+    @Override
+    public String execute(String[] args) {
+        return"Útok";
     }
+
+    @Override
+    public boolean exit() {
+        return false;
+    }
+
 }

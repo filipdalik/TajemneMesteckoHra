@@ -1,7 +1,14 @@
 package Commands;
 
 public class CommandPoison implements Command{
-    public void execute(String[] args) {
-        System.out.println("Použití jedu");
+    @Override
+    public String execute(String[] args) {
+        return"Použití jedu";
     }
+
+    @Override
+    public boolean exit() {
+        return false;
+    }
+
 }

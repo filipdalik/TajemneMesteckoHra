@@ -1,7 +1,13 @@
 package Commands;
 
 public class CommandStartWork implements Command{
-    public void execute(String[] args) {
-        System.out.println("Začátek úkolu");
+    @Override
+    public String execute(String[] args) {
+        return"Začátek úkolu";
     }
+    @Override
+    public boolean exit() {
+        return false;
+    }
+
 }

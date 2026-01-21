@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandUse implements Command{
-    public void execute(String[] args) {
-        System.out.println("Použití předmětu");
+    @Override
+    public String execute(String[] args) {
+        return"Použití předmětu";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandWorkScore implements Command{
-    public void execute(String[] args) {
-        System.out.println("Vyhodnocení úkolu");
+    @Override
+    public String execute(String[] args) {
+        return"Vyhodnocení úkolu";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

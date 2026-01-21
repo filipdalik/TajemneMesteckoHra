@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandEndDialog implements Command{
-    public void execute(String[] args) {
-        System.out.println("Dialog ukončen");
+    @Override
+    public String execute(String[] args) {
+        return"Dialog ukončen";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

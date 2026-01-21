@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandDefenz implements Command{
-    public void execute(String[] args) {
-        System.out.println("Obrana");
+    @Override
+    public String execute(String[] args) {
+        return"Obrana";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

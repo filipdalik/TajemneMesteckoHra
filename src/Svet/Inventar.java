@@ -1,12 +1,13 @@
+package Svet;
+
 import java.util.ArrayList;
 
 public class Inventar {
-
-
-    ArrayList <String> predmety;
+    private int kapacitaBatohu = 2;
+    ArrayList <Predmet> predmety;
 
     public Inventar() {
-        this.predmety = new ArrayList<>();
+        this.predmety = new ArrayList<>(kapacitaBatohu);
     }
     public void pridejPredmet(String item) {
         //TODO dodelat pridani

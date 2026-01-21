@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandCatch implements Command{
-    public void execute(String[] args) {
-        System.out.println("Zahození předmětu");
+    @Override
+    public String execute(String[] args) {
+        return"Zahození předmětu";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

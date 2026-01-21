@@ -1,4 +1,5 @@
 package Commands;
 public interface Command {
-    void execute(String[] args);
+    String execute(String[] args);
+    boolean exit();
 }

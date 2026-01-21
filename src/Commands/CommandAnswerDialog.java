@@ -1,7 +1,12 @@
 package Commands;
 
 public class CommandAnswerDialog implements Command{
-    public void execute(String[] args) {
-        System.out.println("Odpověď v dialogu");
+    @Override
+    public String execute(String[] args) {
+        return "Odpověď v dialogu";
+    }
+    @Override
+    public boolean exit() {
+        return false;
     }
 }

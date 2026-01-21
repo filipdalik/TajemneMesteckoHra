@@ -14,15 +14,10 @@ import java.util.List;
 @NoArgsConstructor
 
 public class Lokace {
-    protected String id;
-    protected String jmeno;
-    protected String popis;
-    protected Pripojeni pripojeni;
+    private String id;
+    private String jmeno;
+    private String popis;
+    private Pripojeni pripojeni;
     private List<Npc> Npccka;
-
-
-
-
-
 
 }
