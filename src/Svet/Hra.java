@@ -16,7 +16,7 @@ public class Hra {
         System.out.println("Jak se chcete jmenovat??");
         System.out.println("_______________________________");
         String jmenoHrace = scanner.next();
-        Hrac hrac = new Hrac("Filip","Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
+        Hrac hrac = new Hrac(jmenoHrace,"Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
         Inventar inventar = new Inventar();
         konzole.start(hrac,nacteniMapy.getSpravovaniLokaci());
 

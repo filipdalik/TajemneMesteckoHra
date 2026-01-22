@@ -45,13 +45,21 @@ public class CommandGO implements Command{
                 return "Neplatný směr. Použij: rovne, zpet, doleva, doprava.";
             }
         }
+        Lokace nova = null;
+        for (Lokace l : spravovaniLokaci.getLokace()) {
+            if (l.getId().equals(noveID)) {
+                nova = l;
+                break;
+            }
+        }
 
         if (noveID == null) {
             return "Tímto směrem se jít nedá.";
         }
 
         hrac.setiDMistnosti(noveID);
-        return "Přesunul jsi se do nové místnosti.";
+        return "Přesunul jsi se do nové místnosti: "+ nova.getJmeno() + "\n"
+                + nova.getPopis();
     }
 
     @Override

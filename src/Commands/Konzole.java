@@ -20,6 +20,7 @@ public class Konzole {
 
     public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci){
         seznamPrikazu.put("jdi", new CommandGO(hrac, spravovaniLokaci));
+        seznamPrikazu.put("mapa",new CommandMapa());
     }
 
     public void execute(){
