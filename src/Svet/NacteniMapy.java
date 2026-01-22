@@ -11,7 +11,6 @@ public class NacteniMapy {
         return SpravovaniLokaci;
     }
     private SpravovaniLokaci SpravovaniLokaci;
-
     public void nacteniMapy(String resourcePath){
         ObjectMapper parser = new ObjectMapper();
         try{

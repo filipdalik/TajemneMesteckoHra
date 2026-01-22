@@ -19,5 +19,5 @@ public class Lokace {
     private String popis;
     private Pripojeni pripojeni;
     private List<Npc> Npccka;
-
+    private List<Predmet> predmety;
 }

@@ -19,9 +19,5 @@ public class Hra {
         Hrac hrac = new Hrac(jmenoHrace,"Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
         Inventar inventar = new Inventar();
         konzole.start(hrac,nacteniMapy.getSpravovaniLokaci());
-
-
-
-
     }
 }

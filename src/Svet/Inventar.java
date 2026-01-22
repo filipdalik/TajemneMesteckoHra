@@ -9,11 +9,11 @@ public class Inventar {
     public Inventar() {
         this.predmety = new ArrayList<>(kapacitaBatohu);
     }
-    public void pridejPredmet(String item) {
-        //TODO dodelat pridani
+    public void pridejPredmet(Predmet predmet) {
+        predmety.add(predmet);
     }
-    public void odeberPredmet(String item) {
-        //TODO dodelat odebrani
+    public void odeberPredmet(Predmet predmet) {
+        predmety.remove(predmet);
     }
 
 }
