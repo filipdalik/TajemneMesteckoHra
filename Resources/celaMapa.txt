@@ -1,11 +1,11 @@
-              Elektrárna
-                  |
-         Policejní stanice
-                  |
-     Nemocnice — Park
-                  |
-     Radnice — Náměstí — Obytná čtvrť
+      Okraj města (startovní místo)
                   |
                 Sklad
                   |
-             Okraj města
+Obytná čtvrť — Náměstí — Radnice
+                  |
+                 Park — Nemocnice
+                  |
+          Policejní stanice
+                  |
+              Elektrárna

@@ -5,6 +5,5 @@ public class Main {
 
         Hra hra = new Hra();
         hra.ZacitHru();
-
     }
 }

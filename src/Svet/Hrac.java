@@ -1,7 +1,6 @@
 package Svet;
 
 
-
 public class Hrac {
     private String jmeno;
     private int zivoty;
@@ -29,6 +28,22 @@ public class Hrac {
         this.jmeno = jmeno;
     }
 
+    public String getAktualniMistnost() {
+        return aktualniMistnost;
+    }
+
+    public void setAktualniMistnost(String aktualniMistnost) {
+        this.aktualniMistnost = aktualniMistnost;
+    }
+
+    public Inventar getInventar() {
+        return inventar;
+    }
+
+    public void setInventar(Inventar inventar) {
+        this.inventar = inventar;
+    }
+
     public String getiDMistnosti() {
         return iDMistnosti;
     }
@@ -43,13 +58,5 @@ public class Hrac {
 
     public void setZivoty(int zivoty) {
         this.zivoty = zivoty;
-    }
-
-    public String getAktualniMistnost() {
-        return aktualniMistnost;
-    }
-
-    public void setAktualniMistnost(String aktualniMistnost) {
-        this.aktualniMistnost = aktualniMistnost;
     }
 }

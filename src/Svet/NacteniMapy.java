@@ -11,10 +11,10 @@ public class NacteniMapy {
         return SpravovaniLokaci;
     }
     private SpravovaniLokaci SpravovaniLokaci;
-    public void nacteniMapy(String resourcePath){
+    public void nacteniMapy(String jmenoSouboru){
         ObjectMapper parser = new ObjectMapper();
         try{
-            InputStream input = new FileInputStream(resourcePath);
+            InputStream input = new FileInputStream(jmenoSouboru);
             SpravovaniLokaci = parser.readValue(input, SpravovaniLokaci.class);
         } catch (FileNotFoundException e) {
             System.out.println("Soubor nebyl nalezen. Chyba: " + e.getMessage());

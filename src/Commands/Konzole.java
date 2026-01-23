@@ -19,8 +19,11 @@ public class Konzole {
     }
 
     public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci){
-        seznamPrikazu.put("jdi", new CommandGO(hrac, spravovaniLokaci));
+        seznamPrikazu.put("jdi", new CommandPohyb(hrac, spravovaniLokaci));
         seznamPrikazu.put("mapa",new CommandMapa());
+        seznamPrikazu.put("pomoc",new CommandPomoc());
+        seznamPrikazu.put("konec",new CommandExit());
+
     }
 
     public void execute(){
@@ -32,7 +35,7 @@ public class Konzole {
             System.out.println(seznamPrikazu.get(prikazy[0]).execute(prikazy));
             isExit = seznamPrikazu.get(prikazy[0]).exit();
         }else{
-            System.out.println("Příkaz neexistuje, zkus to znovu, případně si pročti seznam všech příkazů pomocí příkazu 'help'");
+            System.out.println("Prikaz neexistuje, zkus to znovu, pripadne si procti seznam vsech prikazu pomoci prikazu 'pomoc'");
         }
     }
 

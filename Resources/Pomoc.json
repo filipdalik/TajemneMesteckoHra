@@ -1,0 +1,28 @@
+{
+  "pomoci" : [
+    "jdi rovne",
+    "jdi doprava",
+    "jdi zpet",
+    "jdi doleva",
+
+    "spustit_dialog",
+    "ukoncit_dialog",
+    "odpovedet_a",
+    "odpovedet_b",
+
+    "pouzij <Predmet>",
+    "zahod <Predmet>",
+    "seber <Predmet>",
+    "info <Predmet>",
+
+    "info_ukol",
+    "zacni_ukol",
+    "vyhodnotit_ukol",
+
+    "utok",
+    "obrana",
+    "jed",
+
+    "exit"
+  ]
+}

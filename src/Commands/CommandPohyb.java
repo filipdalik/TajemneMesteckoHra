@@ -5,11 +5,11 @@ import Svet.Lokace;
 import Svet.Pripojeni;
 import Svet.SpravovaniLokaci;
 
-public class CommandGO implements Command{
+public class CommandPohyb implements Command{
     SpravovaniLokaci spravovaniLokaci;
     Hrac hrac;
 
-    public CommandGO(Hrac hrac, SpravovaniLokaci spravovaniLokaci) {
+    public CommandPohyb(Hrac hrac, SpravovaniLokaci spravovaniLokaci) {
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
     }
