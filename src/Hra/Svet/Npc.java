@@ -12,11 +12,5 @@ import lombok.ToString;
 
 public class Npc {
     private String jmeno;
-
-
-
-
-    public void mluv() {
-        System.out.println(jmeno + ": ...");
-    }
+    private Dialog dialog;
 }

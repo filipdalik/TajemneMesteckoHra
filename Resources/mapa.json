@@ -120,25 +120,74 @@
     ],
   "npccka": [
     {
-      "jmeno": "Vodnik"
+      "jmeno": "Vodnik",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "Policista"
+      "jmeno": "Policista",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "Starostka"
+      "jmeno": "Starostka",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "StaryDoktor"
+      "jmeno": "StaryDoktor",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "Vesnican"
+      "jmeno": "Vesnican",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "Zahradnice"
+      "jmeno": "Zahradnice",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     },
     {
-      "jmeno": "Elektrikar"
+      "jmeno": "Elektrikar",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
     }
   ],
   "predmety": [
