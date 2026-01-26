@@ -10,7 +10,7 @@
           "rovne": "Sklad",
           "zpet": null
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -23,7 +23,7 @@
           "rovne": "Namesti",
           "zpet": "Okraj_mesta"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -36,7 +36,7 @@
           "rovne": "Park",
           "zpet": "Sklad"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -49,7 +49,7 @@
           "rovne": null,
           "zpet": "Namesti"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -62,7 +62,7 @@
           "rovne": null,
           "zpet": "Namesti"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -75,7 +75,7 @@
           "rovne": "Policejni_stanice",
           "zpet": "Namesti"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -88,7 +88,7 @@
           "rovne": null,
           "zpet": "Park"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -101,7 +101,7 @@
           "rovne": "Elektrarna",
           "zpet": "Park"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       },
       {
@@ -114,8 +114,69 @@
           "rovne": null,
           "zpet": "Policejni_stanice"
         },
-        "npccka":[null],
+        "npc": null,
         "predmety": [null]
       }
-    ]
+    ],
+  "npccka": [
+    {
+      "jmeno": "Vodnik"
+    },
+    {
+      "jmeno": "Policista"
+    },
+    {
+      "jmeno": "Starostka"
+    },
+    {
+      "jmeno": "StaryDoktor"
+    },
+    {
+      "jmeno": "Vesnican"
+    },
+    {
+      "jmeno": "Zahradnice"
+    },
+    {
+      "jmeno": "Elektrikar"
+    }
+  ],
+  "predmety": [
+    {
+      "id": "kresadlo",
+      "nazev": "Kresadlo",
+      "popis": "Slouzi k rozdelani ohne."
+    },
+    {
+      "id": "kladivo",
+      "nazev": "Kladivo",
+      "popis": "Predmet pro spravovani veci."
+    },
+    {
+      "id": "kabel",
+      "nazev": "Kabel",
+      "popis": "Kabel slouzi k zapojeni elektriny."
+    },
+    {
+      "id": "pojistky",
+      "nazev": "Pojistky",
+      "popis": "Slouzi k finalnimu zprovozneni elektriny."
+    },
+    {
+      "id": "bylinky",
+      "nazev": "Bylinky",
+      "popis": "Lecive rostliny na lektvar a uzdraveni nekoho."
+    },
+    {
+      "id": " stare_dokumenty",
+      "nazev": "Stare dokumenty",
+      "popis": "Dokumenty, kde jsou napsany historicke poznatky o meste."
+    },
+    {
+      "id": "lektvar",
+      "nazev": "Lektvar",
+      "popis": "Bud lecivy a nebo nelecivy, zalezi pro koho je, protoze je pro nekoho dost nebezpecny."
+    }
+  ]
+
 }
