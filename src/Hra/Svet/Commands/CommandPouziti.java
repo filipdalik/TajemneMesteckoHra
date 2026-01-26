@@ -1,8 +1,10 @@
 package Hra.Svet.Commands;
 
-public class CommandUse implements Command{
+public class CommandPouziti implements Command{
+
     @Override
     public String execute(String[] args) {
+
         return"Použití předmětu";
     }
     @Override

@@ -18,8 +18,6 @@ public class CommandPomoc implements Command{
                 return "Nepodařilo se načíst pomoc.";
         }
     }
-
-
     @Override
     public boolean exit() {
         return false;

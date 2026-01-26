@@ -1,11 +1,10 @@
 package Hra.Svet;
 
-
 public class Hrac {
     private String jmeno;
     private int zivoty;
     private String iDMistnosti;
-    Inventar inventar;
+    private Inventar inventar;
     private String aktualniMistnost;
 
     public Hrac(String jmeno, String zacatecniMistnost, SpravovaniLokaci spravovaniLokaci) {
