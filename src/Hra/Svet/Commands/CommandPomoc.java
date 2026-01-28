@@ -12,10 +12,10 @@ public class CommandPomoc implements Command{
             try (InputStream input = new FileInputStream("resources/pomoc.json")) {
 
                 PomocData data = mapper.readValue(input, PomocData.class);
-                return data.getPomoci().toString();
+                return data.vypsaniPomoci();
 
             } catch (Exception e) {
-                return "Nepodařilo se načíst pomoc.";
+                return "Nepodarilo se nacíst pomoc.";
         }
     }
     @Override
