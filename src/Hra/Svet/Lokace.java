@@ -1,22 +1,22 @@
 package Hra.Svet;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
-@ToString
-@Getter
-@Setter
-@NoArgsConstructor
 
+@Data
 public class Lokace {
     private String id;
     private String jmeno;
     private String popis;
     private Pripojeni pripojeni;
+    private String jmenoNpc;
+    private List<String> nazvyPredmetu;
+
+    private List<Predmet> predmety = new ArrayList<>();
     private Npc npc;
-    private List<Predmet> predmety;
+
+
 }

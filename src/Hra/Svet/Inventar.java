@@ -48,4 +48,7 @@ public class Inventar {
     public boolean jePlny() {
         return predmety.size() >= kapacitaBatohu;
     }
+    public ArrayList<Predmet> getPredmety() {
+        return predmety;
+    }
 }

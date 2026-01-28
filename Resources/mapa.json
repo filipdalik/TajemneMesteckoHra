@@ -2,7 +2,7 @@
     "lokace": [
       {
         "id": "Okraj_mesta",
-        "jmeno": "Okraj města",
+        "jmeno": "Okraj_mesta",
         "popis": "Probudil ses u rozbité silnice poblíž zničeného auta.",
         "pripojeni": {
           "doprava": null,
@@ -10,8 +10,8 @@
           "rovne": "Sklad",
           "zpet": null
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "AutoRadio",
+        "nazvyPredmetu": ["kresadlo"]
       },
       {
         "id": "Sklad",
@@ -23,8 +23,8 @@
           "rovne": "Namesti",
           "zpet": "Okraj_mesta"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Skladnik",
+        "nazvyPredmetu": ["kabel"]
       },
       {
         "id": "Namesti",
@@ -36,12 +36,12 @@
           "rovne": "Park",
           "zpet": "Sklad"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Vodnik",
+        "nazvyPredmetu": ["kladivo"]
       },
       {
         "id": "Obytna_ctvrt",
-        "jmeno": "Obytná čtvrť",
+        "jmeno": "Obytna_ctvrt",
         "popis": "Rozbité domy a opuštěné ulice. Je zde vesničan.",
         "pripojeni": {
           "doprava": null,
@@ -49,8 +49,8 @@
           "rovne": null,
           "zpet": "Namesti"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Vesnican",
+        "nazvyPredmetu": ["pojistky"]
       },
       {
         "id": "Radnice",
@@ -62,8 +62,8 @@
           "rovne": null,
           "zpet": "Namesti"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Starostka",
+        "nazvyPredmetu": ["stare_dokumenty"]
       },
       {
         "id": "Park",
@@ -75,8 +75,8 @@
           "rovne": "Policejni_stanice",
           "zpet": "Namesti"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Zahradnice",
+        "nazvyPredmetu": ["bylinky"]
       },
       {
         "id": "Nemocnice",
@@ -88,12 +88,12 @@
           "rovne": null,
           "zpet": "Park"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "StaryDoktor",
+        "nazvyPredmetu": ["lektvar"]
       },
       {
         "id": "Policejni_stanice",
-        "jmeno": "Policejní stanice",
+        "jmeno": "Policejni_stanice",
         "popis": "Policejní stanice se starými dokumenty. Hlídá ji policista.",
         "pripojeni": {
           "doprava": null,
@@ -101,8 +101,8 @@
           "rovne": "Elektrarna",
           "zpet": "Park"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Policista",
+        "nazvyPredmetu": ["klic"]
       },
       {
         "id": "Elektrarna",
@@ -114,43 +114,32 @@
           "rovne": null,
           "zpet": "Policejni_stanice"
         },
-        "npc": null,
-        "predmety": [null]
+        "jmenoNpc": "Elektrikar",
+        "nazvyPredmetu": [null]
       }
     ],
   "npccka": [
     {
+      "jmeno": "AutoRadio",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
+    },{
+      "jmeno": "Skladnik",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
+    },
+    {
       "jmeno": "Vodnik",
-      "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
-      }
-    },
-    {
-      "jmeno": "Policista",
-      "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
-      }
-    },
-    {
-      "jmeno": "Starostka",
-      "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
-      }
-    },
-    {
-      "jmeno": "StaryDoktor",
       "dialog": {
         "dialogText": "",
         "volbaA": "",
@@ -170,7 +159,37 @@
       }
     },
     {
+      "jmeno": "Starostka",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
+    },
+    {
       "jmeno": "Zahradnice",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
+    },
+    {
+      "jmeno": "StaryDoktor",
+      "dialog": {
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
+      }
+    },
+    {
+      "jmeno": "Policista",
       "dialog": {
         "dialogText": "",
         "volbaA": "",
@@ -225,7 +244,15 @@
       "id": "lektvar",
       "nazev": "Lektvar",
       "popis": "Bud lecivy a nebo nelecivy, zalezi pro koho je, protoze je pro nekoho dost nebezpecny."
+    },
+    {
+      "id": "klic",
+      "nazev": "Klic",
+      "popis": "Slouzi k otevreni elektrarny."
+    },{
+      "id": "kresadlo",
+      "nazev": "Kresadlo",
+      "popis": "Slouzi k rozdelani ohne."
     }
   ]
-
 }

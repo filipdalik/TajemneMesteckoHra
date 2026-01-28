@@ -16,6 +16,7 @@ public class NacteniMapy {
         try{
             InputStream input = new FileInputStream(jmenoSouboru);
             SpravovaniLokaci = parser.readValue(input, SpravovaniLokaci.class);
+            SpravovaniLokaci.init();
         } catch (FileNotFoundException e) {
             System.out.println("Soubor nebyl nalezen. Chyba: " + e.getMessage());
         } catch (Exception e) {

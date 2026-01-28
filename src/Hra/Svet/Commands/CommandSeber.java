@@ -25,7 +25,7 @@ public class CommandSeber implements Command{
         }
 
         String nazev = args[1];
-        Lokace lokace = null;
+        Lokace lokace = new Lokace();
 
         for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
             if (spravovaniLokaci.getLokace().get(i).getId().equals(hrac.getiDMistnosti())) {
