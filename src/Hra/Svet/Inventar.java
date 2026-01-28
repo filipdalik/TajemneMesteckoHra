@@ -36,7 +36,9 @@ public class Inventar {
     }
 
     public String vypisInventar() {
-        if (predmety.isEmpty()) return "Inventar je prazdny.";
+        if (predmety.isEmpty()) {
+            return "Inventar je prazdny.";
+        }
 
         StringBuilder sb = new StringBuilder("V inventari mas:\n");
         for (int i = 0; i < predmety.size(); i++) {

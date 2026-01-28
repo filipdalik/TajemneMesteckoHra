@@ -24,10 +24,7 @@ public class CommandPouziti implements Command{
         if (!inventar.obsahujePredmet(nazev)){
             return "Tento predmet nemas.";
         }
-
-        Predmet predmet = inventar.getPredmet(nazev);
-        predmet.pouzij(hrac);
-
+        
         return "Pouzil jsi " + nazev + ".";
     }
 

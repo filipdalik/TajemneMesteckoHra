@@ -35,13 +35,10 @@ public class CommandZahod implements Command{
                 break;
             }
         }
-
         if (lokace == null){
             return "Mistnost nenalezena.";
         }
-
         lokace.getPredmety().add(predmet);
-
         return "Zahodil jsi " + nazev + ".";
     }
 

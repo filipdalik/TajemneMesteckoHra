@@ -27,6 +27,7 @@ public class Konzole {
         seznamPrikazu.put("zahod", new CommandZahod(hrac, spravovaniLokaci));
         seznamPrikazu.put("seber", new CommandSeber(hrac, spravovaniLokaci));
         seznamPrikazu.put("info", new CommandInfoPredmet(hrac));
+        seznamPrikazu.put("inventar", new CommandInventar(hrac));
 
     }
 
