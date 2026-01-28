@@ -14,6 +14,7 @@
     "zahod <Predmet>",
     "seber <Predmet>",
     "info <Predmet>",
+    "inventar",
 
     "info_ukol",
     "zacni_ukol",
@@ -23,6 +24,6 @@
     "obrana",
     "jed",
 
-    "exit"
+    "konec"
   ]
 }

@@ -16,5 +16,4 @@ public class Dialog {
     private String volbaB;
     private String odpovedA;
     private String odpovedB;
-
 }

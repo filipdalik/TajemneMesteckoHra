@@ -1,6 +1,8 @@
 package Hra.Svet.Commands;
 
+import Hra.Svet.Hra;
 import Hra.Svet.Hrac;
+import Hra.Svet.SpravceDialogu;
 import Hra.Svet.SpravovaniLokaci;
 
 import java.util.HashMap;
@@ -11,14 +13,16 @@ public class Konzole {
     private HashMap<String,Command> seznamPrikazu;
     private boolean isExit;
     private Scanner scanner;
+    private SpravceDialogu spravceDialogu;
 
-    public Konzole() {
+    public Konzole(SpravceDialogu spravceDialogu) {
         this.isExit = false;
         this.scanner = new Scanner(System.in);
         this.seznamPrikazu = new HashMap<>();
+        this.spravceDialogu = new SpravceDialogu();
     }
 
-    public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci){
+    public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu){
         seznamPrikazu.put("jdi", new CommandPohyb(hrac, spravovaniLokaci));
         seznamPrikazu.put("mapa",new CommandMapa());
         seznamPrikazu.put("pomoc",new CommandPomoc());
@@ -28,7 +32,10 @@ public class Konzole {
         seznamPrikazu.put("seber", new CommandSeber(hrac, spravovaniLokaci));
         seznamPrikazu.put("info", new CommandInfoPredmet(hrac));
         seznamPrikazu.put("inventar", new CommandInventar(hrac));
-
+        seznamPrikazu.put("spustit_dialog",new CommandDialog(1,hrac,spravovaniLokaci,spravceDialogu));
+        seznamPrikazu.put("odpovedet_a",new CommandDialog(2,hrac,spravovaniLokaci,spravceDialogu));
+        seznamPrikazu.put("odpovedet_b",new CommandDialog(3,hrac,spravovaniLokaci,spravceDialogu));
+        seznamPrikazu.put("ukoncit_dialog",new CommandDialog(4,hrac,spravovaniLokaci,spravceDialogu));
     }
 
     public void execute(){
@@ -44,8 +51,8 @@ public class Konzole {
         }
     }
 
-    public void start(Hrac hrac, SpravovaniLokaci spravovaniLokaci){
-        inicialization(hrac,spravovaniLokaci);
+    public void start(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu){
+        inicialization(hrac, spravovaniLokaci, spravceDialogu);
         do{
             execute();
         }while(!isExit);
