@@ -28,7 +28,7 @@ public class SekaniTravyVParkuMiniHra {
             vykresliPole();
 
             if (jePosekano()) {
-                System.out.println("Všechna tráva je posekaná!");
+                System.out.println("Vsechna tráva je posekana!");
                 return true;
             }
 
