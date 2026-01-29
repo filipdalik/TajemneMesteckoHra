@@ -24,7 +24,7 @@
           "zpet": "Okraj_mesta"
         },
         "jmenoNpc": "Skladnik",
-        "nazvyPredmetu": ["kabel"]
+        "nazvyPredmetu": ["kabel","sekacka"]
       },
       {
         "id": "Namesti",
@@ -253,6 +253,10 @@
       "id": "kresadlo",
       "nazev": "Kresadlo",
       "popis": "Slouzi k rozdelani ohne."
+    },{
+      "id": "sekacka",
+      "nazev": "sekacka",
+      "popis": "Slouzi k sekani travy."
     }
   ]
 }

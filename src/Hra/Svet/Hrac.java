@@ -18,6 +18,9 @@ public class Hrac {
         this.zivoty = 2;
         inventar = new Inventar();
     }
+    public void ubratZivoty(int pocet){
+        zivoty = zivoty-pocet;
+    }
 
     public String getJmeno() {
         return jmeno;

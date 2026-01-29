@@ -7,8 +7,9 @@ public class CommandDialog implements Command {
     private SpravovaniLokaci spravovaniLokaci;
     private SpravceDialogu dialog;
     private int cislo;
+    private boolean jeSpusten = false;
 
-    public CommandDialog(int cislo,Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu dialog) {
+    public CommandDialog(int cislo, Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu dialog) {
         this.cislo = cislo;
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
@@ -18,10 +19,10 @@ public class CommandDialog implements Command {
     @Override
     public String execute(String[] args) {
 
-        if (args.length == 0){
+        if (args.length == 0) {
             return "Neplatny prikaz.";
         }
-        if (cislo == 1){
+        if (cislo == 1) {
             if (dialog.jeDialogAktivni())
                 return "Dialog uz probiha.";
 
@@ -34,16 +35,25 @@ public class CommandDialog implements Command {
                 }
             }
 
-            if (npc == null){
+            if (npc == null) {
                 return "Nikdo tu neni.";
             }
 
             return dialog.startDialog(npc);
         } else if (cislo == 2) {
+            if (!dialog.jeDialogAktivni()) {
+                return "Dialog momentalne neprobiha, nejprve ho musis spustit.";
+            }
             return dialog.odpovedet("A");
-        }else if (cislo == 3) {
+        } else if (cislo == 3) {
+            if (!dialog.jeDialogAktivni()) {
+                return "Dialog momentalne neprobiha, nejprve ho musis spustit.";
+            }
             return dialog.odpovedet("B");
-        }else {
+        } else {
+            if (!dialog.jeDialogAktivni()) {
+                return "Dialog momentalne neprobiha, nejprve ho musis spustit.";
+            }
             return dialog.ukoncitDialog();
         }
     }

@@ -1,5 +1,6 @@
 package Hra.Svet;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -17,6 +18,10 @@ public class Lokace {
 
     private List<Predmet> predmety = new ArrayList<>();
     private Npc npc;
-
-
+//    @JsonIgnore
+//    private Ukol ukol;
+//
+//    public void setUkol(Ukol ukol) {
+//        this.ukol = new Ukol;
+//    }
 }

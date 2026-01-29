@@ -1,0 +1,96 @@
+package Hra.Svet;
+
+import java.util.Scanner;
+
+public class SekaniTravyVParkuMiniHra {
+
+    private char[][] pole = new char[10][10];
+    private int hracX = 0;
+    private int hracY = 0;
+
+    public SekaniTravyVParkuMiniHra() {
+        inicializujPole();
+    }
+
+    private void inicializujPole() {
+        for (int y = 0; y < 10; y++) {
+            for (int x = 0; x < 10; x++) {
+                pole[y][x] = '*';
+            }
+        }
+        pole[hracY][hracX] = '@';
+    }
+
+    public boolean spust() {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            vykresliPole();
+
+            if (jePosekano()) {
+                System.out.println("Všechna tráva je posekaná!");
+                return true;
+            }
+
+            System.out.print("Pohyb (w/a/s/d): ");
+            String vstup = scanner.nextLine();
+
+            if (vstup.isEmpty()) continue;
+
+            pohniHracem(vstup.charAt(0));
+        }
+    }
+
+    private void pohniHracem(char smer) {
+        int noveX = hracX;
+        int noveY = hracY;
+
+        switch (smer) {
+            case 'w':
+                noveY--;
+                break;
+            case 's':
+                noveY++;
+                break;
+            case 'a':
+                noveX--;
+                break;
+            case 'd':
+                noveX++;
+                break;
+            default:
+                return;
+        }
+
+        if (noveX < 0 || noveX >= 10 || noveY < 0 || noveY >= 10) {
+            return;
+        }
+
+        pole[hracY][hracX] = ' ';
+        hracX = noveX;
+        hracY = noveY;
+        pole[hracY][hracX] = '@';
+    }
+
+    private boolean jePosekano() {
+        for (int y = 0; y < 10; y++) {
+            for (int x = 0; x < 10; x++) {
+                if (pole[y][x] == '*') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    private void vykresliPole() {
+        System.out.println();
+        for (int y = 0; y < 10; y++) {
+            for (int x = 0; x < 10; x++) {
+                System.out.print(pole[y][x] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+}
