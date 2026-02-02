@@ -7,7 +7,6 @@ public class CommandDialog implements Command {
     private SpravovaniLokaci spravovaniLokaci;
     private SpravceDialogu dialog;
     private int cislo;
-    private boolean jeSpusten = false;
 
     public CommandDialog(int cislo, Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu dialog) {
         this.cislo = cislo;
@@ -28,8 +27,7 @@ public class CommandDialog implements Command {
 
             Npc npc = null;
             for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
-                if (spravovaniLokaci.getLokace().get(i).getId()
-                        .equals(hrac.getiDMistnosti())) {
+                if (spravovaniLokaci.getLokace().get(i).getId().equals(hrac.getiDMistnosti())) {
                     npc = spravovaniLokaci.getLokace().get(i).getNpc();
                     break;
                 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SekaniTravyVParkuMiniHra {
 
-    private char[][] pole = new char[10][10];
+    private char[][] pole = new char[12][12];
     private int hracX = 0;
     private int hracY = 0;
 
@@ -13,8 +13,8 @@ public class SekaniTravyVParkuMiniHra {
     }
 
     private void inicializujPole() {
-        for (int y = 0; y < 10; y++) {
-            for (int x = 0; x < 10; x++) {
+        for (int y = 0; y < 12; y++) {
+            for (int x = 0; x < 12; x++) {
                 pole[y][x] = '*';
             }
         }
@@ -62,7 +62,7 @@ public class SekaniTravyVParkuMiniHra {
                 return;
         }
 
-        if (noveX < 0 || noveX >= 10 || noveY < 0 || noveY >= 10) {
+        if (noveX < 0 || noveX >= 12 || noveY < 0 || noveY >= 12) {
             return;
         }
 
@@ -73,8 +73,8 @@ public class SekaniTravyVParkuMiniHra {
     }
 
     private boolean jePosekano() {
-        for (int y = 0; y < 10; y++) {
-            for (int x = 0; x < 10; x++) {
+        for (int y = 0; y < 12; y++) {
+            for (int x = 0; x < 12; x++) {
                 if (pole[y][x] == '*') {
                     return false;
                 }
@@ -85,8 +85,8 @@ public class SekaniTravyVParkuMiniHra {
 
     private void vykresliPole() {
         System.out.println();
-        for (int y = 0; y < 10; y++) {
-            for (int x = 0; x < 10; x++) {
+        for (int y = 0; y < 12; y++) {
+            for (int x = 0; x < 12; x++) {
                 System.out.print(pole[y][x] + " ");
             }
             System.out.println();

@@ -141,11 +141,11 @@
     {
       "jmeno": "Vodnik",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Ahoj, jak se mas?",
+        "volbaA": "Celkem dobre",
+        "volbaB": "Spatne",
+        "odpovedA": "Tak to rad slysim, at se ti nadale dari....",
+        "odpovedB": "To me moc mrzi, snad to bude co nejdriv v pohode..."
       }
     },
     {
