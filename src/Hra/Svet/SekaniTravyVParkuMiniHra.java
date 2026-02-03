@@ -2,13 +2,16 @@ package Hra.Svet;
 
 import java.util.Scanner;
 
-public class SekaniTravyVParkuMiniHra {
+public class SekaniTravyVParkuMiniHra extends Ukol{
+
 
     private char[][] pole = new char[12][12];
     private int hracX = 0;
     private int hracY = 0;
+    private boolean jeSplnen  = false;
 
     public SekaniTravyVParkuMiniHra() {
+        super("sekaniTravy");
         inicializujPole();
     }
 
@@ -20,25 +23,29 @@ public class SekaniTravyVParkuMiniHra {
         }
         pole[hracY][hracX] = '@';
     }
-
+    @Override
     public boolean spust() {
         Scanner scanner = new Scanner(System.in);
+        if (jeSplnen ==false) {
+            while (true) {
+                vykresliPole();
 
-        while (true) {
-            vykresliPole();
+                if (jePosekano()) {
+                    System.out.println("Vsechna tráva je posekana a tento ukol je splnen!");
+                    jeSplnen = true;
+                    return true;
+                }
 
-            if (jePosekano()) {
-                System.out.println("Vsechna tráva je posekana!");
-                return true;
+                System.out.print("Pohyb (w/a/s/d): ");
+                String vstup = scanner.nextLine();
+
+                if (vstup.isEmpty()) continue;
+
+                pohniHracem(vstup.charAt(0));
             }
-
-            System.out.print("Pohyb (w/a/s/d): ");
-            String vstup = scanner.nextLine();
-
-            if (vstup.isEmpty()) continue;
-
-            pohniHracem(vstup.charAt(0));
         }
+        System.out.println("Tento ukol je jiz splnen.");
+        return false;
     }
 
     private void pohniHracem(char smer) {

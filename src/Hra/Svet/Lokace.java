@@ -14,14 +14,12 @@ public class Lokace {
     private String popis;
     private Pripojeni pripojeni;
     private String jmenoNpc;
+    private String jmenoUkol;
+    private boolean splneniUkolu;
+    private boolean zamceno;
     private List<String> nazvyPredmetu;
 
     private List<Predmet> predmety = new ArrayList<>();
     private Npc npc;
-//    @JsonIgnore
-//    private Ukol ukol;
-//
-//    public void setUkol(Ukol ukol) {
-//        this.ukol = new Ukol;
-//    }
+
 }

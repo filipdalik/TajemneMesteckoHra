@@ -1,9 +1,6 @@
 package Hra.Svet.Commands;
 
-import Hra.Svet.Hra;
-import Hra.Svet.Hrac;
-import Hra.Svet.SpravceDialogu;
-import Hra.Svet.SpravovaniLokaci;
+import Hra.Svet.*;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -22,7 +19,7 @@ public class Konzole {
         this.spravceDialogu = new SpravceDialogu();
     }
 
-    public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu){
+    public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu, SpravceUkolu spravceUkolu){
         seznamPrikazu.put("jdi", new CommandPohyb(hrac, spravovaniLokaci));
         seznamPrikazu.put("mapa",new CommandMapa());
         seznamPrikazu.put("pomoc",new CommandPomoc());
@@ -36,6 +33,7 @@ public class Konzole {
         seznamPrikazu.put("odpovedet_a",new CommandDialog(2,hrac,spravovaniLokaci,spravceDialogu));
         seznamPrikazu.put("odpovedet_b",new CommandDialog(3,hrac,spravovaniLokaci,spravceDialogu));
         seznamPrikazu.put("ukoncit_dialog",new CommandDialog(4,hrac,spravovaniLokaci,spravceDialogu));
+        seznamPrikazu.put("zacit_ukol",new CommandZacitUkol(spravovaniLokaci,spravceUkolu,hrac));
     }
 
     public void execute(){
@@ -51,8 +49,8 @@ public class Konzole {
         }
     }
 
-    public void start(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu){
-        inicialization(hrac, spravovaniLokaci, spravceDialogu);
+    public void start(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu, SpravceUkolu spravceUkolu){
+        inicialization(hrac, spravovaniLokaci, spravceDialogu, spravceUkolu);
         do{
             execute();
         }while(!isExit);

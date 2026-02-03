@@ -1,6 +1,8 @@
 package Hra.Svet;
 
 import Hra.Svet.Commands.Konzole;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import lombok.Getter;
@@ -14,14 +16,13 @@ import lombok.ToString;
 @NoArgsConstructor
 
 public class Hra {
-
     Scanner scanner = new Scanner(System.in);
     private SpravceDialogu spravceDialogu= new SpravceDialogu();
+    private SpravceUkolu spravceUkolu= new SpravceUkolu();
     private String aktualniLokace = "Okraj_mesta";
     public void ZacitHru(){
         NacteniMapy nacteniMapy = new NacteniMapy();
         nacteniMapy.nacteniMapy("resources/mapa.json");
-
         Konzole konzole = new Konzole(spravceDialogu);
         System.out.println("Jak se chcete jmenovat??");
         System.out.println("_______________________________");
@@ -29,6 +30,6 @@ public class Hra {
         Hrac hrac = new Hrac(jmenoHrace,"Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
         aktualniLokace = hrac.getAktualniMistnost() ;
         Inventar inventar = new Inventar();
-        konzole.start(hrac,nacteniMapy.getSpravovaniLokaci(),spravceDialogu);
+        konzole.start(hrac,nacteniMapy.getSpravovaniLokaci(),spravceDialogu,spravceUkolu);
     }
 }

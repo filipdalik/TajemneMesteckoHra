@@ -11,6 +11,9 @@
           "zpet": null
         },
         "jmenoNpc": "AutoRadio",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["kresadlo"]
       },
       {
@@ -24,6 +27,9 @@
           "zpet": "Okraj_mesta"
         },
         "jmenoNpc": "Skladnik",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["kabel","sekacka"]
       },
       {
@@ -37,6 +43,9 @@
           "zpet": "Sklad"
         },
         "jmenoNpc": "Vodnik",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["kladivo"]
       },
       {
@@ -50,6 +59,9 @@
           "zpet": "Namesti"
         },
         "jmenoNpc": "Vesnican",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["pojistky"]
       },
       {
@@ -63,6 +75,9 @@
           "zpet": "Namesti"
         },
         "jmenoNpc": "Starostka",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["stare_dokumenty"]
       },
       {
@@ -76,6 +91,9 @@
           "zpet": "Namesti"
         },
         "jmenoNpc": "Zahradnice",
+        "jmenoUkol": "SekaniUkol",
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["bylinky"]
       },
       {
@@ -89,6 +107,9 @@
           "zpet": "Park"
         },
         "jmenoNpc": "StaryDoktor",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["lektvar"]
       },
       {
@@ -102,6 +123,9 @@
           "zpet": "Park"
         },
         "jmenoNpc": "Policista",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": false,
         "nazvyPredmetu": ["klic"]
       },
       {
@@ -115,6 +139,9 @@
           "zpet": "Policejni_stanice"
         },
         "jmenoNpc": "Elektrikar",
+        "jmenoUkol": null,
+        "splneniUkolu": false,
+        "zamceno": true,
         "nazvyPredmetu": [null]
       }
     ],
