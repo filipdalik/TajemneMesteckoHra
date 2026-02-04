@@ -43,7 +43,7 @@
           "zpet": "Sklad"
         },
         "jmenoNpc": "Vodnik",
-        "jmenoUkol": null,
+        "jmenoUkol": "HazeniMinciDoKasnyMiniHra",
         "splneniUkolu": false,
         "zamceno": false,
         "nazvyPredmetu": ["kladivo"]
@@ -123,10 +123,10 @@
           "zpet": "Park"
         },
         "jmenoNpc": "Policista",
-        "jmenoUkol": null,
+        "jmenoUkol": "soubojSPolicistou",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["klic"]
+        "nazvyPredmetu": [null]
       },
       {
         "id": "Elektrarna",
@@ -271,11 +271,6 @@
       "id": "lektvar",
       "nazev": "Lektvar",
       "popis": "Bud lecivy a nebo nelecivy, zalezi pro koho je, protoze je pro nekoho dost nebezpecny."
-    },
-    {
-      "id": "klic",
-      "nazev": "Klic",
-      "popis": "Slouzi k otevreni elektrarny."
     },{
       "id": "kresadlo",
       "nazev": "Kresadlo",

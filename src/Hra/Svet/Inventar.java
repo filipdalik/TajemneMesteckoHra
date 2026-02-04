@@ -16,6 +16,7 @@ public class Inventar {
         predmety.add(predmet);
         return true;
     }
+    public void odeberPredmet(String nazev){}
 
     public void odeberPredmet(Predmet predmet) {
         predmety.remove(predmet);

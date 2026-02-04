@@ -16,6 +16,9 @@ public class SpravceUkolu {
 
     public void pridej() {
         ukoly.add(new SekaniTravyVParkuMiniHra(hrac));
+        ukoly.add(new SoubojSPolicistouMiniHra(hrac));
+        ukoly.add(new HazeniMinciDoKasnyMiniHra(hrac));
+
     }
 
     public Ukol najdiUkol(String jmeno) {

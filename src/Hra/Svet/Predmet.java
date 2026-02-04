@@ -18,4 +18,10 @@ public class Predmet {
     public void pouzij(Hrac hrac) {
         System.out.println("Pouzil jsi " + nazev + ".");
     }
+
+    public Predmet(String id, String popis, String nazev) {
+        this.id = id;
+        this.popis = popis;
+        this.nazev = nazev;
+    }
 }
