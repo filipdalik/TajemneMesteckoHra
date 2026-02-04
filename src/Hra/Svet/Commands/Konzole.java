@@ -1,6 +1,7 @@
 package Hra.Svet.Commands;
 
 import Hra.Svet.*;
+import Hra.Svet.Ukoly.SpravceUkolu;
 
 import java.util.HashMap;
 import java.util.Scanner;
@@ -55,4 +56,5 @@ public class Konzole {
             execute();
         }while(!isExit);
     }
+
 }

@@ -2,9 +2,9 @@ package Hra.Svet;
 
 import Hra.Svet.Commands.Konzole;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
+import Hra.Svet.Ukoly.SpravceUkolu;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,7 +18,8 @@ import lombok.ToString;
 public class Hra {
     Scanner scanner = new Scanner(System.in);
     private SpravceDialogu spravceDialogu= new SpravceDialogu();
-    private SpravceUkolu spravceUkolu= new SpravceUkolu();
+    private SpravceUkolu spravceUkolu;
+
     private String aktualniLokace = "Okraj_mesta";
     public void ZacitHru(){
         NacteniMapy nacteniMapy = new NacteniMapy();
@@ -29,7 +30,8 @@ public class Hra {
         String jmenoHrace = scanner.next();
         Hrac hrac = new Hrac(jmenoHrace,"Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
         aktualniLokace = hrac.getAktualniMistnost() ;
-        Inventar inventar = new Inventar();
-        konzole.start(hrac,nacteniMapy.getSpravovaniLokaci(),spravceDialogu,spravceUkolu);
+        spravceUkolu = new SpravceUkolu(hrac);
+        konzole.start(hrac,nacteniMapy.getSpravovaniLokaci(),spravceDialogu, spravceUkolu);
+
     }
 }

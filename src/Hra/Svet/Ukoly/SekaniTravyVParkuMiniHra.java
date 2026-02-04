@@ -1,17 +1,18 @@
-package Hra.Svet;
+package Hra.Svet.Ukoly;
+
+import Hra.Svet.Hrac;
 
 import java.util.Scanner;
 
-public class SekaniTravyVParkuMiniHra extends Ukol{
-
+public class SekaniTravyVParkuMiniHra extends Ukol {
 
     private char[][] pole = new char[12][12];
     private int hracX = 0;
     private int hracY = 0;
     private boolean jeSplnen  = false;
 
-    public SekaniTravyVParkuMiniHra() {
-        super("sekaniTravy");
+    public SekaniTravyVParkuMiniHra(Hrac hrac) {
+        super("sekaniUkol", hrac);
         inicializujPole();
     }
 
@@ -26,25 +27,29 @@ public class SekaniTravyVParkuMiniHra extends Ukol{
     @Override
     public boolean spust() {
         Scanner scanner = new Scanner(System.in);
-        if (jeSplnen ==false) {
-            while (true) {
-                vykresliPole();
+        if (hrac.getInventar().obsahujePredmet("sekacka")) {
+            if (!jeSplnen) {
+                while (true) {
+                    vykresliPole();
 
-                if (jePosekano()) {
-                    System.out.println("Vsechna tráva je posekana a tento ukol je splnen!");
-                    jeSplnen = true;
-                    return true;
+                    if (jePosekano()) {
+                        System.out.println("Vsechna tráva je posekana a tento ukol je splnen!");
+                        jeSplnen = true;
+                        return true;
+                    }
+
+                    System.out.print("Pohyb (w/a/s/d): ");
+                    String vstup = scanner.nextLine();
+
+                    if (vstup.isEmpty()) continue;
+
+                    pohniHracem(vstup.charAt(0));
                 }
-
-                System.out.print("Pohyb (w/a/s/d): ");
-                String vstup = scanner.nextLine();
-
-                if (vstup.isEmpty()) continue;
-
-                pohniHracem(vstup.charAt(0));
             }
+            System.out.println("Tento ukol je jiz splnen.");
+            return false;
         }
-        System.out.println("Tento ukol je jiz splnen.");
+            System.out.println("K tomuto ukolu potrebujes sekacku");
         return false;
     }
 

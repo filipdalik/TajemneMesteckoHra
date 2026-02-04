@@ -58,6 +58,7 @@ public class CommandPohyb implements Command{
         }
 
         hrac.setiDMistnosti(noveID);
+        hrac.setAktualniMistnost(nova.getJmeno());
         return "Přesunul jsi se do nové místnosti: "+ nova.getJmeno() + "\n"
                 + nova.getPopis();
     }

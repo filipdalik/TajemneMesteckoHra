@@ -1,6 +1,5 @@
 package Hra.Svet;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import java.util.ArrayList;

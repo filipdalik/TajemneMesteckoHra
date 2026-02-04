@@ -45,4 +45,11 @@ public class SpravovaniLokaci {
         }
         return null;
     }
+
+    public Lokace getLokace(String jmeno) {
+        for (Lokace lokacce : lokace) {
+            if (lokacce.getId().equalsIgnoreCase(jmeno)) return lokacce;
+        }
+        throw new IllegalArgumentException("neplatne jmeno: " + jmeno);
+    }
 }
