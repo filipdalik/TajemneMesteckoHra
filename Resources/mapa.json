@@ -149,7 +149,7 @@
     {
       "jmeno": "AutoRadio",
       "dialog": {
-        "dialogText": "Z auta trci stara autoradio. Obcas v nem zapraskaji zvuky, jako by se snazilo naladit signal...",
+        "dialogText": "Z auta trci stare autoradio. Obcas v nem zapraskaji zvuky, jako by se snazilo naladit signal...",
         "volbaA": "Nastavit frekvenci.",
         "volbaB": "Nechat radio byt.",
         "odpovedA": "Otocis koleckem a na okamzik zaslechnes hlas: '...pozor... katastrofa...' pak vse utichne.",

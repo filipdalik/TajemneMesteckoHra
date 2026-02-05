@@ -25,13 +25,26 @@ public class Hra {
         NacteniMapy nacteniMapy = new NacteniMapy();
         nacteniMapy.nacteniMapy("resources/mapa.json");
         Konzole konzole = new Konzole(spravceDialogu);
-        System.out.println("Jak se chcete jmenovat??");
-        System.out.println("_______________________________");
+        System.out.println(PURPLE+"=============================================");
+        System.out.println("||||||"+YELLOW+"     HRA O TAJEMNEM MESTECKU     "+PURPLE+"||||||");
+        System.out.println("============================================="+RESET);
+        System.out.println();
+        System.out.println(UNDERLINE+BLUE+"Jak se chcete jmenovat??"+RESET);
+        System.out.print("VASE JMENO: ");
         String jmenoHrace = scanner.next();
+        System.out.println("Super jdeme na to "+jmenoHrace+"!");
         Hrac hrac = new Hrac(jmenoHrace,"Okraj_mesta",nacteniMapy.getSpravovaniLokaci());
         aktualniLokace = hrac.getAktualniMistnost() ;
         spravceUkolu = new SpravceUkolu(hrac);
+        System.out.println("Prave se nachazis v lokaci "+hrac.getAktualniMistnost()+".");
+        System.out.println("Probudil ses u rozbité silnice poblíž zničeného auta. Pro vice informaci si spust dialog.");
         konzole.start(hrac,nacteniMapy.getSpravovaniLokaci(),spravceDialogu, spravceUkolu);
-
     }
+    public static final String RESET = "\u001B[0m";
+    public static final String YELLOW = "\u001B[33m";
+    public static final String BLUE = "\u001B[34m";
+    public static final String PURPLE = "\u001B[35m";
+    public static final String UNDERLINE = "\u001B[4m";
+
+
 }
