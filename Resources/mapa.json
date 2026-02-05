@@ -46,7 +46,7 @@
         "jmenoUkol": "HazeniMinciDoKasnyMiniHra",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       },
       {
         "id": "Obytna_ctvrt",
@@ -78,7 +78,7 @@
         "jmenoUkol": "ukolRadnice",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       },
       {
         "id": "Park",
@@ -94,7 +94,7 @@
         "jmenoUkol": "sekaniUkol",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       },
       {
         "id": "Nemocnice",
@@ -110,7 +110,7 @@
         "jmenoUkol": "mixLektvaru",
         "splneniUkolu": false,
         "zamceno": true,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       },
       {
         "id": "Policejni_stanice",
@@ -126,7 +126,7 @@
         "jmenoUkol": "soubojSPolicistou",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       },
       {
         "id": "Elektrarna",
@@ -142,7 +142,7 @@
         "jmenoUkol": "ElektrarnaFinalniUkol",
         "splneniUkolu": false,
         "zamceno": true,
-        "nazvyPredmetu": [null]
+        "nazvyPredmetu": []
       }
     ],
   "npccka": [

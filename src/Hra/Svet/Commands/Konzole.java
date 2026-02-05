@@ -35,6 +35,7 @@ public class Konzole {
         seznamPrikazu.put("odpovedet_b",new CommandDialog(3,hrac,spravovaniLokaci,spravceDialogu));
         seznamPrikazu.put("ukoncit_dialog",new CommandDialog(4,hrac,spravovaniLokaci,spravceDialogu));
         seznamPrikazu.put("zacit_ukol",new CommandZacitUkol(spravovaniLokaci,spravceUkolu,hrac));
+        seznamPrikazu.put("predmety_zde",new CommandPredmetyVLokaci(spravovaniLokaci,hrac));
     }
 
     public void execute(){
