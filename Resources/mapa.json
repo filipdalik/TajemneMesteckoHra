@@ -34,7 +34,7 @@
       },
       {
         "id": "Namesti",
-        "jmeno": "Náměstí",
+        "jmeno": "Namesti",
         "popis": "Rozpadlé náměstí s nefunkční kašnou. U kašny sedí vodník.",
         "pripojeni": {
           "doprava": "Obytna_ctvrt",
@@ -109,7 +109,7 @@
         "jmenoNpc": "StaryDoktor",
         "jmenoUkol": null,
         "splneniUkolu": false,
-        "zamceno": false,
+        "zamceno": true,
         "nazvyPredmetu": ["lektvar"]
       },
       {
