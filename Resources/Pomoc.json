@@ -16,9 +16,7 @@
     "info <Predmet>",
     "inventar",
 
-    "info_ukol",
-    "zacni_ukol",
-    "vyhodnotit_ukol",
+    "zacit_ukol",
 
     "utok",
     "obrana",

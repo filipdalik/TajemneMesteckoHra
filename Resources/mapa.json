@@ -149,90 +149,91 @@
     {
       "jmeno": "AutoRadio",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Z auta trci stara autoradio. Obcas v nem zapraskaji zvuky, jako by se snazilo naladit signal...",
+        "volbaA": "Nastavit frekvenci.",
+        "volbaB": "Nechat radio byt.",
+        "odpovedA": "Otocis koleckem a na okamzik zaslechnes hlas: '...pozor... katastrofa...' pak vse utichne.",
+        "odpovedB": "Nechavas radio jak je. Mozna je to tak bezpecnejsi."
       }
-    },{
+    },
+    {
       "jmeno": "Skladnik",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Skladnik sedi mezi bednami. Vypada unavene, ale pratelne.",
+        "volbaA": "Zeptat se na zasoby.",
+        "volbaB": "Pozadat o pomoc s hledanim materialu.",
+        "odpovedA": "„Zasoby? No... po tom co se stalo moc nezbylo. Ale kdyz budes slusny, mozna ti neco dam.”",
+        "odpovedB": "„Material? Mozna neco najdu. Podivej se tamhle v rohu. Obcas tam zbyva uzitecny srot.”"
       }
     },
     {
       "jmeno": "Vodnik",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Z kalne vody vystrci hlavu podivna bytost. Vodnik si te zvedave prohlizi.",
+        "volbaA": "Promluvit pratelne.",
+        "volbaB": "Drzet si odstup.",
+        "odpovedA": "„Clovece, nejsem nepritel. Ale voda si pamatuje. Hlavne s ni zachazej opatrne.”",
+        "odpovedB": "Vodnik se zamrací. „Strach? No, to chapu. Po tom vsem...”"
       }
     },
     {
       "jmeno": "Vesnican",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Vesnican stoji opodál a drzi cepici v rukou. Vypada nervozne.",
+        "volbaA": "Zeptat se, co se stalo.",
+        "volbaB": "Rict, ze mu nechces delat potize.",
+        "odpovedA": "„Nekdo vypnul elektrarnu... a pak prisly ty zvlastni udalosti. Nikdo nevi, proc.”",
+        "odpovedB": "„To je v poradku… ja jsem jen prekvapeny, ze tu jeste nekdo chodi.”"
       }
     },
     {
       "jmeno": "Starostka",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Starostka stoji u kancelarskeho stolu a zapisuje nejake poznamky.",
+        "volbaA": "Pozadat o informace o historii mesta.",
+        "volbaB": "Zeptat se na elektrarnu.",
+        "odpovedA": "„Historie mesta je dlouha a komplikovana. Ale radnice ma dokumenty, ktere by ti mohly pomoct.”",
+        "odpovedB": "„Elektrarna... to je srdce mesta. Bez ni to vsechno zacalo upadat.”"
       }
     },
     {
       "jmeno": "Zahradnice",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Zahradnice se zrovna sklani k zahonu. V rukou drzi svazek bylinek.",
+        "volbaA": "Pozadat o bylinky.",
+        "volbaB": "Zeptat se na tajemne udalosti.",
+        "odpovedA": "„Bylinky? Muzu se podelit. Ale pouzivej je s rozumem.”",
+        "odpovedB": "„Rostliny cití, kdyz se neco deje. A ver mi, uz dlouho nejsou klidne.”"
       }
     },
     {
       "jmeno": "StaryDoktor",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Stary doktor sedi na zidli a prebira stare lahvicky.",
+        "volbaA": "Zeptat se na lektvary.",
+        "volbaB": "Pozadat o radu.",
+        "odpovedA": "„Lektvary... hm. Spravna kombinace muze pomoci, spatna skodi. Pamatuj si to.”",
+        "odpovedB": "„Rada? Neztracej hlavu. Vse ma sve reseni, i kdyz ho jeste nevidis.”"
       }
     },
     {
       "jmeno": "Policista",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Policista stoji u cesty a vypada nevrle.",
+        "volbaA": "Zavolat na nej.",
+        "volbaB": "Přejít potichu kolem.",
+        "odpovedA": "„Stuj! Tady nikdo jen tak neprojde bez povoleni!”",
+        "odpovedB": "Policista te prehlidne, ale stale pusobi napjate."
       }
     },
     {
       "jmeno": "Elektrikar",
       "dialog": {
-        "dialogText": "",
-        "volbaA": "",
-        "volbaB": "",
-        "odpovedA": "",
-        "odpovedB": ""
+        "dialogText": "Elektrikar se prehrabuje v bedne s nastroji.",
+        "volbaA": "Zeptat se na stav elektrarny.",
+        "volbaB": "Pozadat o technickou pomoc.",
+        "odpovedA": "„Elektrarna je ve spatnem stavu. Ale kdyz sezenes pojistky a kabel, jeste to pujde spravit.”",
+        "odpovedB": "„Pomoc? Jasne, ale nejdriv potrebujes ty spravne soucastky.”"
       }
     }
   ],
