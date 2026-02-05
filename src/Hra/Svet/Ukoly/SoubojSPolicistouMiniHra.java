@@ -2,7 +2,6 @@ package Hra.Svet.Ukoly;
 
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
-import Hra.Svet.SpravovaniLokaci;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -20,7 +19,7 @@ public class SoubojSPolicistouMiniHra extends Ukol {
     public boolean spust() {
         if (!hrac.getInventar().jePlny()) {
         if (jeSplnen) {
-            System.out.println("Tento ukol uz jsi splnil.");
+            System.out.println("Tento ukol uz jsi delal.");
             return true;
         }
 
@@ -67,10 +66,10 @@ public class SoubojSPolicistouMiniHra extends Ukol {
                 }
 
             }else if (hracAkce.equals("jed")) {
-                if (!hrac.getInventar().obsahujePredmet("jed")) {
+                if (!hrac.getInventar().obsahujePredmet("lektvar")) {
                     System.out.println("Nemas jed, akce ztracena!");
                 } else {
-                    hrac.getInventar().odeberPredmet("jed");
+                    hrac.getInventar().odeberPredmet("lektvar");
                     if (policistaAkce.equals("utok")) {
                         System.out.println("Pouzil jsi jed a timjsi ubral policistovi 2 zivoty, ten ale zautocil a tobe take jeden ubral.");
                         hrac.ubratZivoty(1);
@@ -95,7 +94,7 @@ public class SoubojSPolicistouMiniHra extends Ukol {
             if (zivotyPolicisty <= 0) {
                 System.out.println("Policista je porazen!");
                 System.out.println("Ziskal jsi klic! Ukol jsi splnil, pokracuj dal.....");
-                hrac.getInventar().pridejPredmet(new Predmet("klic", "Slouzi k otevreni elektrarny.", "Klic"));
+                hrac.getInventar().pridejPredmet(new Predmet("klic", "Slouzi k otevreni elektrarny.", "klic"));
                 jeSplnen = true;
             }
             }

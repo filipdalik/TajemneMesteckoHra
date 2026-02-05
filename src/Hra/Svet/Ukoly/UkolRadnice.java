@@ -21,7 +21,7 @@ public class UkolRadnice extends Ukol{
     public boolean spust() {
 
         if (jeSplnen) {
-            System.out.println("Tento ukol jsi uz splnil.");
+            System.out.println("Tento ukol jsi uz delal.");
             return true;
         }
 
@@ -45,7 +45,8 @@ public class UkolRadnice extends Ukol{
             String odpoved = sc.nextLine().trim().toLowerCase();
 
             if (!odpoved.equals(spravne[i])) {
-                System.out.println("Spatne! Zkus to znovu pozdeji.");
+                System.out.println("Spatne! Mas smulu, ukol nesplnen.");
+                jeSplnen = true;
                 return false;
             }
             System.out.println("Spravne!");
@@ -64,7 +65,8 @@ public class UkolRadnice extends Ukol{
             System.out.println("Chyba pri nacitani historie ze souboru.");
         }
         System.out.println();
-        System.out.println("Starosta ti dekuje za pomoc.");
+        System.out.println("Starosta ti dekuje za pomoc. A dava ti kladivo.");
+        hrac.getInventar().pridejPredmet(new Predmet("kladivo", "Predmet pro odemceni nemocnice.", "kladivo"));
         jeSplnen = true;
         return true;
     }

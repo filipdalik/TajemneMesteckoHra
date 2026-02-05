@@ -30,7 +30,7 @@
         "jmenoUkol": null,
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["kabel","sekacka"]
+        "nazvyPredmetu": ["kabel","sekacka","pojistky"]
       },
       {
         "id": "Namesti",
@@ -46,7 +46,7 @@
         "jmenoUkol": "HazeniMinciDoKasnyMiniHra",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["kladivo"]
+        "nazvyPredmetu": [null]
       },
       {
         "id": "Obytna_ctvrt",
@@ -62,7 +62,7 @@
         "jmenoUkol": null,
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["pojistky"]
+        "nazvyPredmetu": ["prkna"]
       },
       {
         "id": "Radnice",
@@ -78,7 +78,7 @@
         "jmenoUkol": "ukolRadnice",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["stare_dokumenty"]
+        "nazvyPredmetu": [null]
       },
       {
         "id": "Park",
@@ -94,7 +94,7 @@
         "jmenoUkol": "sekaniUkol",
         "splneniUkolu": false,
         "zamceno": false,
-        "nazvyPredmetu": ["bylinky"]
+        "nazvyPredmetu": [null]
       },
       {
         "id": "Nemocnice",
@@ -110,7 +110,7 @@
         "jmenoUkol": "mixLektvaru",
         "splneniUkolu": false,
         "zamceno": true,
-        "nazvyPredmetu": ["lektvar"]
+        "nazvyPredmetu": [null]
       },
       {
         "id": "Policejni_stanice",
@@ -239,38 +239,33 @@
   "predmety": [
     {
       "id": "kresadlo",
-      "nazev": "Kresadlo",
+      "nazev": "kresadlo",
       "popis": "Slouzi k rozdelani ohne."
     },
     {
-      "id": "kladivo",
-      "nazev": "Kladivo",
-      "popis": "Predmet pro odemceni nemocnice."
-    },
-    {
       "id": "kabel",
-      "nazev": "Kabel",
+      "nazev": "kabel",
       "popis": "Kabel slouzi k zapojeni elektriny."
     },
     {
       "id": "pojistky",
-      "nazev": "Pojistky",
+      "nazev": "pojistky",
       "popis": "Slouzi k finalnimu zprovozneni elektriny."
     },
     {
       "id": " stare_dokumenty",
-      "nazev": "Stare dokumenty",
+      "nazev": "stare_Dokumenty",
       "popis": "Dokumenty, kde jsou napsany historicke poznatky o meste."
-    },
-    {
-      "id": "lektvar",
-      "nazev": "Lektvar",
-      "popis": "Bud lecivy a nebo nelecivy, zalezi pro koho je, protoze je pro nekoho dost nebezpecny."
     },
     {
       "id": "sekacka",
       "nazev": "sekacka",
       "popis": "Slouzi k sekani travy."
+    },
+    {
+      "id": "prkna",
+      "nazev": "prkna",
+      "popis": "Slouzi k opravovani domu."
     }
   ]
 }

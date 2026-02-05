@@ -19,7 +19,7 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
     @Override
     public boolean spust() {
         if (jeSplnen) {
-            System.out.println("Tento ukol je jiz splnen.");
+            System.out.println("Tento ukol jsi uz delal.");
             return false;
         }
 
@@ -72,6 +72,7 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
         }
 
         System.out.println("Ukol nesplnen. Netrefil ses dostatecne.");
+        jeSplnen = true;
         return false;
     }
 }
