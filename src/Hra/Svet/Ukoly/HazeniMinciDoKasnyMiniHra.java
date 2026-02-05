@@ -67,6 +67,7 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
                 System.out.println("Splnil jsi ukol! Trefil ses dostatecne presne!");
                 System.out.println("Napoveda do radnice zni: U prvniho vyplneni dej lety.");
                 jeSplnen = true;
+                hrac.zvysitPocetUkolu();
                 return true;
             }
         }

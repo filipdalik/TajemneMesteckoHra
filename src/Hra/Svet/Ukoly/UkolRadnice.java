@@ -71,6 +71,7 @@ public class UkolRadnice extends Ukol{
         System.out.println();
         System.out.println("Starosta ti dekuje za pomoc. A dava ti kladivo.");
         hrac.getInventar().pridejPredmet(new Predmet("kladivo", "Predmet pro odemceni nemocnice.", "kladivo"));
+        hrac.zvysitPocetUkolu();
         jeSplnen = true;
         return true;
     }

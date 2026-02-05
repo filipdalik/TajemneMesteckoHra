@@ -22,6 +22,7 @@ public class SpravceUkolu {
         ukoly.add(new LektvarMiniHra(hrac));
         ukoly.add(new UkolObytnaCtvrt(hrac));
         ukoly.add(new ZadnyUkol(hrac));
+        ukoly.add(new ElektrarnaFinalniUkol(hrac));
     }
 
     public Ukol najdiUkol(String jmeno) {

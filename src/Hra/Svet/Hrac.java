@@ -6,6 +6,7 @@ public class Hrac {
     private String iDMistnosti;
     private Inventar inventar;
     private String aktualniMistnost;
+    private int splneneUkoly;
 
     public Hrac(String jmeno, String zacatecniMistnost, SpravovaniLokaci spravovaniLokaci) {
         for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
@@ -16,11 +17,20 @@ public class Hrac {
         }
         this.jmeno = jmeno;
         this.zivoty = 2;
+        this.splneneUkoly = 0;
         inventar = new Inventar();
     }
     public void ubratZivoty(int pocet){
         zivoty = zivoty-pocet;
     }
+
+    public void zvysitPocetUkolu() {
+        this.splneneUkoly = splneneUkoly + 1;
+    }
+    public int getPocetUkolu() {
+        return splneneUkoly;
+    }
+
 
     public String getJmeno() {
         return jmeno;

@@ -12,7 +12,7 @@
         },
         "jmenoNpc": "AutoRadio",
         "jmenoUkol": "ZadnyUkol",
-        "splneniUkolu": false,
+        "splneniUkolu": true,
         "zamceno": false,
         "nazvyPredmetu": ["kresadlo"]
       },
@@ -28,7 +28,7 @@
         },
         "jmenoNpc": "Skladnik",
         "jmenoUkol": "ZadnyUkol",
-        "splneniUkolu": false,
+        "splneniUkolu": true,
         "zamceno": false,
         "nazvyPredmetu": ["kabel","sekacka","pojistky"]
       },
@@ -139,7 +139,7 @@
           "zpet": "Policejni_stanice"
         },
         "jmenoNpc": "Elektrikar",
-        "jmenoUkol": null,
+        "jmenoUkol": "ElektrarnaFinalniUkol",
         "splneniUkolu": false,
         "zamceno": true,
         "nazvyPredmetu": [null]
@@ -168,11 +168,11 @@
     {
       "jmeno": "Vodnik",
       "dialog": {
-        "dialogText": "Ahoj, jak se mas?",
-        "volbaA": "Celkem dobre",
-        "volbaB": "Spatne",
-        "odpovedA": "Tak to rad slysim, at se ti nadale dari....",
-        "odpovedB": "To me moc mrzi, snad to bude co nejdriv v pohode..."
+        "dialogText": "",
+        "volbaA": "",
+        "volbaB": "",
+        "odpovedA": "",
+        "odpovedB": ""
       }
     },
     {
@@ -251,11 +251,6 @@
       "id": "pojistky",
       "nazev": "pojistky",
       "popis": "Slouzi k finalnimu zprovozneni elektriny."
-    },
-    {
-      "id": " stare_dokumenty",
-      "nazev": "stare_Dokumenty",
-      "popis": "Dokumenty, kde jsou napsany historicke poznatky o meste."
     },
     {
       "id": "sekacka",

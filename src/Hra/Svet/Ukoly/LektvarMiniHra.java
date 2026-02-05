@@ -59,6 +59,7 @@ public class LektvarMiniHra extends Ukol{
             if (spravne) {
                 System.out.println("Spravne! Smichal jsi lektvar.");
                 hrac.getInventar().pridejPredmet(new Predmet("lektvar", "Silny lektvar z bylinek", "lektvar"));
+                hrac.zvysitPocetUkolu();
                 jeSplnen = true;
                 return true;
             } else {

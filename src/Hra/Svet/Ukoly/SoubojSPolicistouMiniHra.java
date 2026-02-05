@@ -95,6 +95,7 @@ public class SoubojSPolicistouMiniHra extends Ukol {
                 System.out.println("Policista je porazen!");
                 System.out.println("Ziskal jsi klic! Ukol jsi splnil, pokracuj dal.....");
                 hrac.getInventar().pridejPredmet(new Predmet("klic", "Slouzi k otevreni elektrarny.", "klic"));
+                hrac.zvysitPocetUkolu();
                 jeSplnen = true;
             }
             }

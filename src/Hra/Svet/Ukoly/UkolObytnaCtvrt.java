@@ -43,6 +43,7 @@ public class UkolObytnaCtvrt extends Ukol{
                     System.out.println("Spravne! Dum je opravena.");
                     hrac.getInventar().odeberPredmet("prkna");
                     hrac.getInventar().pridejPredmet(new Predmet("stare_dokumenty", "Tyto dokumenty potrebujes do radnice.", "stare_dokumenty"));
+                    hrac.zvysitPocetUkolu();
                     jeSplnen = true;
                     return true;
                 } else {
