@@ -24,6 +24,10 @@ public class UkolRadnice extends Ukol{
             System.out.println("Tento ukol jsi uz delal.");
             return true;
         }
+        if (!hrac.getInventar().obsahujePredmet("stare_dokumenty")) {
+            System.out.println("Nemáš potrebny predmet 'stare_dokumenty'! Bez nich nemuzes pokracovat.");
+            return false;
+        }
 
         Scanner sc = new Scanner(System.in);
 

@@ -20,6 +20,8 @@ public class SpravceUkolu {
         ukoly.add(new HazeniMinciDoKasnyMiniHra(hrac));
         ukoly.add(new UkolRadnice(hrac));
         ukoly.add(new LektvarMiniHra(hrac));
+        ukoly.add(new UkolObytnaCtvrt(hrac));
+        ukoly.add(new ZadnyUkol(hrac));
     }
 
     public Ukol najdiUkol(String jmeno) {

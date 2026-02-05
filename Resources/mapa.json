@@ -11,7 +11,7 @@
           "zpet": null
         },
         "jmenoNpc": "AutoRadio",
-        "jmenoUkol": null,
+        "jmenoUkol": "ZadnyUkol",
         "splneniUkolu": false,
         "zamceno": false,
         "nazvyPredmetu": ["kresadlo"]
@@ -27,7 +27,7 @@
           "zpet": "Okraj_mesta"
         },
         "jmenoNpc": "Skladnik",
-        "jmenoUkol": null,
+        "jmenoUkol": "ZadnyUkol",
         "splneniUkolu": false,
         "zamceno": false,
         "nazvyPredmetu": ["kabel","sekacka","pojistky"]
@@ -59,7 +59,7 @@
           "zpet": "Namesti"
         },
         "jmenoNpc": "Vesnican",
-        "jmenoUkol": null,
+        "jmenoUkol": "ukolObytnaCtvrt",
         "splneniUkolu": false,
         "zamceno": false,
         "nazvyPredmetu": ["prkna"]
