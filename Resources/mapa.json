@@ -75,7 +75,7 @@
           "zpet": "Namesti"
         },
         "jmenoNpc": "Starostka",
-        "jmenoUkol": null,
+        "jmenoUkol": "ukolRadnice",
         "splneniUkolu": false,
         "zamceno": false,
         "nazvyPredmetu": ["stare_dokumenty"]
@@ -107,7 +107,7 @@
           "zpet": "Park"
         },
         "jmenoNpc": "StaryDoktor",
-        "jmenoUkol": null,
+        "jmenoUkol": "mixLektvaru",
         "splneniUkolu": false,
         "zamceno": true,
         "nazvyPredmetu": ["lektvar"]
@@ -245,7 +245,7 @@
     {
       "id": "kladivo",
       "nazev": "Kladivo",
-      "popis": "Predmet pro spravovani veci."
+      "popis": "Predmet pro odemceni nemocnice."
     },
     {
       "id": "kabel",
@@ -258,11 +258,6 @@
       "popis": "Slouzi k finalnimu zprovozneni elektriny."
     },
     {
-      "id": "bylinky",
-      "nazev": "Bylinky",
-      "popis": "Lecive rostliny na lektvar a uzdraveni nekoho."
-    },
-    {
       "id": " stare_dokumenty",
       "nazev": "Stare dokumenty",
       "popis": "Dokumenty, kde jsou napsany historicke poznatky o meste."
@@ -271,11 +266,8 @@
       "id": "lektvar",
       "nazev": "Lektvar",
       "popis": "Bud lecivy a nebo nelecivy, zalezi pro koho je, protoze je pro nekoho dost nebezpecny."
-    },{
-      "id": "kresadlo",
-      "nazev": "Kresadlo",
-      "popis": "Slouzi k rozdelani ohne."
-    },{
+    },
+    {
       "id": "sekacka",
       "nazev": "sekacka",
       "popis": "Slouzi k sekani travy."

@@ -1,6 +1,7 @@
 package Hra.Svet.Ukoly;
 
 import Hra.Svet.Hrac;
+import Hra.Svet.Predmet;
 
 import java.util.Scanner;
 
@@ -33,7 +34,8 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
                     vykresliPole();
 
                     if (jePosekano()) {
-                        System.out.println("Vsechna tráva je posekana a tento ukol je splnen!");
+                        System.out.println("Vsechna tráva je posekana a tento ukol je splnen! Ziskavas bylinky od zahradnice, budou se ti hodit.");
+                        hrac.getInventar().pridejPredmet(new Predmet("bylinky", "Bylinky", "Lecive rostliny na lektvar a uzdraveni nekoho."));
                         jeSplnen = true;
                         return true;
                     }
