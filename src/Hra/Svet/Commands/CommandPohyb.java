@@ -17,50 +17,58 @@ public class CommandPohyb implements Command{
     @Override
     public String execute(String[] args) {
         if (args.length < 2) {
-            return "Musíš zadat směr (rovne, zpet, doleva, doprava).";
+            return "Musis zadat smer (rovne, zpet, doleva, doprava).";
         }
         String smer = args[1].toLowerCase();
         String id = hrac.getiDMistnosti();
         Lokace lokaceNasla = null;
-        for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
-            Lokace lokace = spravovaniLokaci.getLokace().get(i);
 
-            if (lokace.getId().equals(id)) {
-                lokaceNasla = lokace;
+        for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
+            Lokace l = spravovaniLokaci.getLokace().get(i);
+            if (l.getId().equals(id)) {
+                lokaceNasla = l;
                 break;
             }
         }
+
         if (lokaceNasla == null) {
-            return "Chyba: aktuální lokace nebyla nalezena.";
+            return "Chyba: aktualni lokace nebyla nalezena.";
         }
 
         Pripojeni pripojeni = lokaceNasla.getPripojeni();
         String noveID;
+
         switch (smer) {
             case "rovne" -> noveID = pripojeni.getRovne();
             case "zpet" -> noveID = pripojeni.getZpet();
             case "doleva" -> noveID = pripojeni.getDoleva();
             case "doprava" -> noveID = pripojeni.getDoprava();
             default -> {
-                return "Neplatný směr. Použij: rovne, zpet, doleva, doprava.";
+                return "Neplatny smer. Pouzij: rovne, zpet, doleva, doprava.";
             }
         }
+
+        if (noveID == null) {
+            return "Timto smerem se jit neda.";
+        }
+
         Lokace nova = null;
-        for (Lokace l : spravovaniLokaci.getLokace()) {
+        for (int i = 0; i < spravovaniLokaci.getLokace().size(); i++) {
+            Lokace l = spravovaniLokaci.getLokace().get(i);
             if (l.getId().equals(noveID)) {
                 nova = l;
                 break;
             }
         }
 
-        if (noveID == null) {
-            return "Tímto směrem se jít nedá.";
+        if (nova != null && nova.isZamceno()) {
+            return "Tato mistnost je zamcena. Musis ji nejdrive odemknout. Pouzij bud klic a nebo kladivo.";
         }
 
         hrac.setiDMistnosti(noveID);
         hrac.setAktualniMistnost(nova.getJmeno());
-        return "Přesunul jsi se do nové místnosti: "+ nova.getJmeno() + "\n"
-                + nova.getPopis();
+        return "Presunul jsi se do nove mistnosti: " + nova.getJmeno() + "\n" + nova.getPopis();
+
     }
 
     @Override

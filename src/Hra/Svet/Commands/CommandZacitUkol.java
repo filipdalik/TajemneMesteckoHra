@@ -31,9 +31,9 @@ public class CommandZacitUkol implements Command {
             ukol.spust();
         } else {
             System.err.println(lokace.getJmenoUkol());
+            return "Ukol se nepodarilo nacist....";
         }
-
-        return "Nepodarilo se najit ukol.";
+        return " ";
     }
 
     @Override
