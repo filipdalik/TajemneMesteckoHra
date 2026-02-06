@@ -16,7 +16,7 @@ import lombok.ToString;
 @NoArgsConstructor
 
 public class Hra {
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
     private SpravceDialogu spravceDialogu= new SpravceDialogu();
     private SpravceUkolu spravceUkolu;
 

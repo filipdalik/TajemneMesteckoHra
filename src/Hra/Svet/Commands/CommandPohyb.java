@@ -6,8 +6,8 @@ import Hra.Svet.Pripojeni;
 import Hra.Svet.SpravovaniLokaci;
 
 public class CommandPohyb implements Command{
-    SpravovaniLokaci spravovaniLokaci;
-    Hrac hrac;
+    private SpravovaniLokaci spravovaniLokaci;
+    private Hrac hrac;
 
     public CommandPohyb(Hrac hrac, SpravovaniLokaci spravovaniLokaci) {
         this.hrac = hrac;
