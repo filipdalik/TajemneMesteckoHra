@@ -32,7 +32,6 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
             if (!jeSplnen) {
                 while (true) {
                     vykresliPole();
-
                     if (jePosekano()) {
                         System.out.println("Vsechna tráva je posekana a tento ukol je splnen! Ziskavas bylinky od zahradnice, budou se ti hodit.");
                         hrac.getInventar().pridejPredmet(new Predmet("bylinky", "Lecive rostliny na lektvar a uzdraveni nekoho.", "bylinky"));

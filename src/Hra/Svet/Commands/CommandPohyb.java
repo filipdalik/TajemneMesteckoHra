@@ -62,7 +62,7 @@ public class CommandPohyb implements Command{
         }
 
         if (nova != null && nova.isZamceno()) {
-            return "Tato mistnost je zamcena. Musis ji nejdrive odemknout. Pouzij bud klic a nebo kladivo.";
+            return "Tato mistnost je zamcena. Musis ji nejdrive odemknout. Pouzij bud klic nebo kladivo.";
         }
 
         hrac.setiDMistnosti(noveID);
