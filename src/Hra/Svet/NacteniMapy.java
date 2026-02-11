@@ -6,6 +6,10 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 public class NacteniMapy {
+    /**
+     * Trida, ktera nacita soubor JSON a uklada jeho obsah do tridy SpravovaniLokaci
+     * @return
+     */
 
     public SpravovaniLokaci getSpravovaniLokaci(){
         return SpravovaniLokaci;
