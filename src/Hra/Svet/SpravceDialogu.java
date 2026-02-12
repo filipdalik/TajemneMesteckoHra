@@ -9,22 +9,38 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-
+/**
+ * Trida, ktera slouzi ke spravovani dialogu
+ */
 public class SpravceDialogu {
 
     private boolean dialogAktivni = false;
     private Npc aktualniNpc;
 
+    /**
+     * Metoda, ktera nam vraci, jestli je dialog aktivni
+     * @return
+     */
     public boolean jeDialogAktivni() {
         return dialogAktivni;
     }
 
+    /**
+     * Metoda, ktera spusti dialog, ktery ma dane npc
+     * @param npc
+     * @return
+     */
     public String startDialog(Npc npc) {
         dialogAktivni = true;
         aktualniNpc = npc;
         return npc.getDialog().getDialogText() + "\nA) " + npc.getDialog().getVolbaA() + "\nB) " + npc.getDialog().getVolbaB() + "\n";
     }
 
+    /**
+     * Metoda, ktera slouzi k odpovezeni na jednu nebo druhou volbu
+     * @param volba
+     * @return
+     */
     public String odpovedet(String volba) {
         if (!dialogAktivni){
             return "Zadny dialog nebezi.";
@@ -37,6 +53,10 @@ public class SpravceDialogu {
         }
     }
 
+    /**
+     * Metoda, ktera ukonci dialog
+     * @return
+     */
     public String ukoncitDialog() {
         dialogAktivni = false;
         aktualniNpc = null;

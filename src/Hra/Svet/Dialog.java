@@ -9,7 +9,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-
+/**
+ * Trida ktera slouzi k vytvoreni dialogu pro NPC
+ */
 public class Dialog {
     private String dialogText;
     private String volbaA;

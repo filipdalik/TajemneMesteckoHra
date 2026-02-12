@@ -5,6 +5,10 @@ import Hra.Svet.Lokace;
 import Hra.Svet.Pripojeni;
 import Hra.Svet.SpravovaniLokaci;
 
+/**
+ * Trida, ktera slouzi k pohybu hrace mezi lokacemi pomoci commandu
+ */
+
 public class CommandPohyb implements Command{
     private SpravovaniLokaci spravovaniLokaci;
     private Hrac hrac;
@@ -13,6 +17,12 @@ public class CommandPohyb implements Command{
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
     }
+
+    /**
+     * Metoda, ktera pomoci smeru vyhodnocuje, zda se muze jit timto smerem a pripadne do jake lokace se pujde a tim i hrace do teze lokace premisti
+     * @param args
+     * @return
+     */
 
     @Override
     public String execute(String[] args) {

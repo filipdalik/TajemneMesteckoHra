@@ -6,6 +6,10 @@ import Hra.Svet.Ukoly.SpravceUkolu;
 import Hra.Svet.SpravovaniLokaci;
 import Hra.Svet.Ukoly.Ukol;
 
+/**
+ * Trida, ktera slouzi k zacatku ukolu
+ */
+
 public class CommandZacitUkol implements Command {
     private SpravovaniLokaci spravovaniLokaci;
     private SpravceUkolu spravceUkolu;
@@ -16,6 +20,12 @@ public class CommandZacitUkol implements Command {
         this.spravceUkolu = spravceUkolu;
         this.hrac = hrac;
     }
+
+    /**
+     * Metoda, ktera zjisti ukol dane lokace a ten spusti
+     * @param args
+     * @return
+     */
 
     @Override
     public String execute(String[] args) {

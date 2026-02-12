@@ -9,13 +9,13 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-
+/**
+ * Trida ktera slouzi k vytvoreni pripojeni, zde se ukladaji lokace ktere jsou danymi smery
+ */
 public class Pripojeni {
     private String doprava;
     private String doleva;
     private String rovne;
     private String zpet;
 
-
-    
 }

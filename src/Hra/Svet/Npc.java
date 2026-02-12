@@ -9,7 +9,9 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-
+/**
+ * Trida ktera slouzi jako vzor pro vsechny NPC v hre
+ */
 public class Npc {
     private String jmeno;
     private Dialog dialog;

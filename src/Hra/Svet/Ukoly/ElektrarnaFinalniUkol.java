@@ -1,14 +1,20 @@
 package Hra.Svet.Ukoly;
-
 import Hra.Svet.Hrac;
-
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace Elektrarna a nasledne i pro konec cele hry
+ */
 public class ElektrarnaFinalniUkol extends Ukol{
 
     public ElektrarnaFinalniUkol(Hrac hrac) {
         super("ElektrarnaFinalniUkol", hrac);
     }
+
+    /**
+     * Metoda, ktera dokoncuje celou hru a pokud ma hrac vsechny ukoly splnene, tak ho to pouzti do ukolu a nasledne uz jen stiskne enter a zapoji pojistky a tim hra konci a vytezi.
+     * @return
+     */
 
     @Override
     public boolean spust() {

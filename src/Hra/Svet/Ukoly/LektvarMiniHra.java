@@ -1,9 +1,11 @@
 package Hra.Svet.Ukoly;
-
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
-
 import java.util.Scanner;
+
+/**
+ * Trida, ktera je ukolem do lokace Nemocnice
+ */
 
 public class LektvarMiniHra extends Ukol{
 
@@ -12,6 +14,14 @@ public class LektvarMiniHra extends Ukol{
     public LektvarMiniHra(Hrac hrac) {
         super("mixLektvaru", hrac);
     }
+
+    /**
+     * Metoda, ktera spravuje ukol, pomoci kombinace sev musi spravne smichat.
+     * Kontroluje i to pokud jsou zadany ingredience napreskacku.
+     * Po splneni pridava novy predmet.
+     * Po nesplneni se hraci ubira zivot.
+     * @return
+     */
 
     @Override
     public boolean spust() {
@@ -63,7 +73,8 @@ public class LektvarMiniHra extends Ukol{
                 jeSplnen = true;
                 return true;
             } else {
-                System.out.println("Spatne! Tento pokus se nezdaril.");
+                System.out.println("Spatne! Tento pokus se nezdaril. Ubira se ti zivot.");
+                hrac.ubratZivoty(1);
                 jeSplnen = true;
             }
         }

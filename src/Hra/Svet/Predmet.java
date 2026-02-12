@@ -9,15 +9,15 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
+/**
+ * Trida ktera slouzi k vytvoreni predmetu
+ */
 
 public class Predmet {
     private String id;
     private String nazev;
     private String popis;
 
-    public void pouzij(Hrac hrac) {
-        System.out.println("Pouzil jsi " + nazev + ".");
-    }
 
     public Predmet(String id, String popis, String nazev) {
         this.id = id;

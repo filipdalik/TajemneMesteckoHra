@@ -4,9 +4,19 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * Trida, ktera slouzi k vypsani mapy
+ */
+
 public class CommandMapa implements Command{
     public CommandMapa() {
     }
+
+    /**
+     * Metoda vypisujici mapu pomoci BufferedReader ze souboru
+     * @param args
+     * @return
+     */
     @Override
     public String execute(String[] args) {
         try (BufferedReader br = new BufferedReader(new FileReader("resources/celaMapa.txt"))){

@@ -15,6 +15,11 @@ public class NacteniMapy {
         return SpravovaniLokaci;
     }
     private SpravovaniLokaci SpravovaniLokaci;
+
+    /**
+     * Metoda, ktera nacita JSON pomoci jmena souboru
+     * @param jmenoSouboru
+     */
     public void nacteniMapy(String jmenoSouboru){
         ObjectMapper parser = new ObjectMapper();
         try{

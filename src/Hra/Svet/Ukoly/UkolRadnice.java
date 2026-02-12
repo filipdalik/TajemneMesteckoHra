@@ -8,6 +8,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace Radnice
+ */
+
 public class UkolRadnice extends Ukol{
 
     private boolean jeSplnen = false;
@@ -17,6 +21,10 @@ public class UkolRadnice extends Ukol{
         super("ukolRadnice", hrac);
     }
 
+    /**
+     * Metoda, ve ktere se odehrava cely ukol, zjistuje, zda hrac splnuje podminky pro spusteni ukolu a pote jej spusti a je to takova vyplnovacka textu
+     * @return
+     */
     @Override
     public boolean spust() {
 

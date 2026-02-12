@@ -6,6 +6,10 @@ import Hra.Svet.Ukoly.SpravceUkolu;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/**
+ * Trida, ktera spracovava vsechny commandy a nasledne s nimi pracuje v konzoli
+ */
+
 public class Konzole {
 
     private HashMap<String,Command> seznamPrikazu;
@@ -19,6 +23,14 @@ public class Konzole {
         this.seznamPrikazu = new HashMap<>();
         this.spravceDialogu = new SpravceDialogu();
     }
+
+    /**
+     * Metoda, ktera vytvari vsechny commandy
+     * @param hrac
+     * @param spravovaniLokaci
+     * @param spravceDialogu
+     * @param spravceUkolu
+     */
 
     public void inicialization(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu, SpravceUkolu spravceUkolu){
         seznamPrikazu.put("jdi", new CommandPohyb(hrac, spravovaniLokaci));
@@ -38,6 +50,9 @@ public class Konzole {
         seznamPrikazu.put("predmety_v_lokaci",new CommandPredmetyVLokaci(spravovaniLokaci,hrac));
     }
 
+    /**
+     * Metoda, ktera ziskava prikazy od hrace a nasledne vyhodnocuje, zda prikaz existuje a nasledne pokud ano, tak spusti command
+     */
     public void execute(){
         System.out.print(">>");
         String prikaz = scanner.nextLine();
@@ -50,6 +65,14 @@ public class Konzole {
             System.out.println("Prikaz neexistuje, zkus to znovu, pripadne si procti seznam vsech prikazu pomoci prikazu 'pomoc'");
         }
     }
+
+    /**
+     * Metoda, ktera startuje konzoli s prikazy
+     * @param hrac
+     * @param spravovaniLokaci
+     * @param spravceDialogu
+     * @param spravceUkolu
+     */
 
     public void start(Hrac hrac, SpravovaniLokaci spravovaniLokaci, SpravceDialogu spravceDialogu, SpravceUkolu spravceUkolu){
         inicialization(hrac, spravovaniLokaci, spravceDialogu, spravceUkolu);

@@ -2,10 +2,12 @@ package Hra.Svet.Ukoly;
 
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
-
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace PolicejniStanice
+ */
 
 public class SoubojSPolicistouMiniHra extends Ukol {
     private boolean jeSplnen = false;
@@ -14,6 +16,12 @@ public class SoubojSPolicistouMiniHra extends Ukol {
     public SoubojSPolicistouMiniHra(Hrac hrac) {
         super("soubojSPolicistou", hrac);
     }
+
+    /**
+     * Metoda, ktera resi souboj hrace a policisty pomoci Scanneru a pak vyhodnocuje ruzne kombinace a tim i ubira/neubira zivoty.
+     * Po porazeni ziskava hrac novy predmet klic.
+     * @return
+     */
 
     @Override
     public boolean spust() {
@@ -83,9 +91,6 @@ public class SoubojSPolicistouMiniHra extends Ukol {
                     }
                 }
             }
-
-
-
             if (hrac.getZivoty() <= 0) {
                 System.out.println("Umrel jsi! Konec hry!");
                 System.exit(0);

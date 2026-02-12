@@ -5,6 +5,10 @@ import Hra.Svet.Lokace;
 import Hra.Svet.Predmet;
 import Hra.Svet.SpravovaniLokaci;
 
+/**
+ * Trida, ktera slouzi k vypsani predmetu v lokaci
+ */
+
 public class CommandPredmetyVLokaci implements Command{
     private Hrac hrac;
     private SpravovaniLokaci spravovaniLokaci;
@@ -13,6 +17,12 @@ public class CommandPredmetyVLokaci implements Command{
         this.spravovaniLokaci = spravovaniLokaci;
         this.hrac = hrac;
     }
+
+    /**
+     * Metoda, ktera vypisuje predmety v dane lokaci, ve ktere se hrac nachazi
+     * @param args
+     * @return
+     */
 
     @Override
     public String execute(String[] args) {
@@ -37,9 +47,6 @@ public class CommandPredmetyVLokaci implements Command{
             }
             return vypis;
         }
-
-
-
         return "V této místnosti nejsou žádné předměty.";
     }
 

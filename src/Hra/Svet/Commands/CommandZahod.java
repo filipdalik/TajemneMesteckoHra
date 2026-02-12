@@ -25,7 +25,8 @@ public class CommandZahod implements Command{
             return "Tento predmet nemas.";
         }
 
-        Predmet predmet = inventar.getPredmet(nazev);
+        String predmet = inventar.getPredmet(nazev).getNazev();
+        Predmet predmetObjekt = inventar.getPredmet(nazev);
         inventar.odeberPredmet(predmet);
 
         Lokace lokace = null;
@@ -38,7 +39,7 @@ public class CommandZahod implements Command{
         if (lokace == null){
             return "Mistnost nenalezena.";
         }
-        lokace.getPredmety().add(predmet);
+        lokace.getPredmety().add(predmetObjekt);
         return "Zahodil jsi " + nazev + ".";
     }
 

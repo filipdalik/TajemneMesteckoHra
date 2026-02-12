@@ -5,6 +5,9 @@ import lombok.Data;
 
 import java.util.ArrayList;
 @Data
+/**
+ * Trida, ktera spravuje vsechny ukoly
+ */
 public class SpravceUkolu {
     private  ArrayList<Ukol> ukoly = new ArrayList<>();
     private Hrac hrac;
@@ -14,6 +17,9 @@ public class SpravceUkolu {
         pridej();
     }
 
+    /**
+     * Metoda, ve ktere se vytvari vsechny ukoly a pridavaji se do ArrayListu s ukoly
+     */
     public void pridej() {
         ukoly.add(new SekaniTravyVParkuMiniHra(hrac));
         ukoly.add(new SoubojSPolicistouMiniHra(hrac));
@@ -25,6 +31,11 @@ public class SpravceUkolu {
         ukoly.add(new ElektrarnaFinalniUkol(hrac));
     }
 
+    /**
+     * Metoda, ktera pomoci jmena hleda dany ukol
+     * @param jmeno
+     * @return
+     */
     public Ukol najdiUkol(String jmeno) {
         for (int i = 0; i < ukoly.size(); i++) {
             Ukol ukol = ukoly.get(i);

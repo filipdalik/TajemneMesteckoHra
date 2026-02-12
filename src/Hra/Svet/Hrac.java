@@ -1,5 +1,7 @@
 package Hra.Svet;
-
+/**
+ * Trida ktera slouzi k vytvoreni hrace do hry
+ */
 public class Hrac {
     private String jmeno;
     private int zivoty;
@@ -20,13 +22,22 @@ public class Hrac {
         this.splneneUkoly = 0;
         inventar = new Inventar();
     }
+
+    /**
+     * Metoda ktera slouzi k ubrani zivotu hrace
+     * @param pocet
+     */
     public void ubratZivoty(int pocet){
         zivoty = zivoty-pocet;
     }
 
+    /**
+     * Metoda, ktera zvysuje pocet udelanych ukolu
+     */
     public void zvysitPocetUkolu() {
         this.splneneUkoly = splneneUkoly + 1;
     }
+
     public int getPocetUkolu() {
         return splneneUkoly;
     }

@@ -5,7 +5,16 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
+/**
+ * Trida, ktera slouzi k vypsani pomoci
+ */
+
 public class CommandPomoc implements Command{
+    /**
+     * Metoda, ktera z JSONu vypisuje pomoc
+     * @param args
+     * @return
+     */
     @Override
     public String execute(String[] args) {
             ObjectMapper mapper = new ObjectMapper();

@@ -1,6 +1,9 @@
 package Hra.Svet.Commands;
 import Hra.Svet.*;
 
+/**
+ * Trida, ktera slouzi se spusteni dialogu ve hre pomoci commandu
+ */
 public class CommandDialog implements Command {
 
     private Hrac hrac;
@@ -15,6 +18,11 @@ public class CommandDialog implements Command {
         this.dialog = dialog;
     }
 
+    /**
+     * Metoda, ktera slouzi k spusteni dialogu ve hre, vzdy podle odpovedi vybere a nebo b a pak vypise danou vetu dialogu
+     * @param args
+     * @return
+     */
     @Override
     public String execute(String[] args) {
 

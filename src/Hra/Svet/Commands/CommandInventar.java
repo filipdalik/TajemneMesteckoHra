@@ -1,9 +1,10 @@
 package Hra.Svet.Commands;
 
 import Hra.Svet.Hrac;
-import Hra.Svet.Predmet;
 
-import java.util.ArrayList;
+/**
+ * Trida, ktera slouzi k vypsani inventare hrace ve hre pomoci commandu
+ */
 
 public class CommandInventar implements Command {
 
@@ -13,19 +14,15 @@ public class CommandInventar implements Command {
         this.hrac = hrac;
     }
 
+    /**
+     * Metoda, ktera pomoci metody ve tride Inventar vypisuje inventar hrace
+     * @param args
+     * @return
+     */
     @Override
     public String execute(String[] args) {
-        ArrayList<Predmet> predmety = hrac.getInventar().getPredmety();
-
-        if (predmety.isEmpty()) return "Inventar je prazdny.";
-
-        String obsah = "V inventari mas:\n";
-
-        for (int i = 0; i < predmety.size(); i++) {
-            Predmet p = predmety.get(i);
-            obsah += "- " + p.getNazev() + "\n";
-        }
-        return obsah;
+        String inventar = hrac.getInventar().vypisInventar();
+        return inventar;
     }
 
     @Override

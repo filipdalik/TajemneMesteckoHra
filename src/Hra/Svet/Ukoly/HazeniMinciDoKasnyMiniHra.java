@@ -1,10 +1,11 @@
 package Hra.Svet.Ukoly;
-
 import Hra.Svet.Hrac;
-
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace Namesti
+ */
 public class HazeniMinciDoKasnyMiniHra extends Ukol{
 
     private boolean jeSplnen = false;
@@ -15,6 +16,11 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
     public HazeniMinciDoKasnyMiniHra( Hrac hrac) {
         super("HazeniMinciDoKasnyMiniHra", hrac);
     }
+
+    /**
+     * Metoda, ktera spravuje ukol, zde se vyhodnocuje sila hodu a podle toho to, jestli se hrac trefil do kasny, je to reseny pomoci random
+     * @return
+     */
 
     @Override
     public boolean spust() {
@@ -72,7 +78,7 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
             }
         }
 
-        System.out.println("Ukol nesplnen. Netrefil ses dostatecne.");
+        System.out.println("Ukol nesplnen. Netrefil jsi se dostatecne.");
         jeSplnen = true;
         return false;
     }

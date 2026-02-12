@@ -5,6 +5,10 @@ import Hra.Svet.Lokace;
 import Hra.Svet.Predmet;
 import Hra.Svet.SpravovaniLokaci;
 
+/**
+ * Trida, ktera slouzi k sebrani predmetu
+ */
+
 public class CommandSeber implements Command{
 
     private Hrac hrac;
@@ -14,6 +18,12 @@ public class CommandSeber implements Command{
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
     }
+
+    /**
+     * Metoda, ktera slouzi k sebrani predmetu, pokud se v dane lokaci nachazi, zjistuje i to, zda neni uz inventar hrace plny a pridava hracovi do inventare predmet
+     * @param args
+     * @return
+     */
 
     @Override
     public String execute(String[] args) {

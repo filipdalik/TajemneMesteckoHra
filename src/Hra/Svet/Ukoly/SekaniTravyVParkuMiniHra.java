@@ -1,10 +1,11 @@
 package Hra.Svet.Ukoly;
-
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
-
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace Park
+ */
 public class SekaniTravyVParkuMiniHra extends Ukol {
 
     private char[][] pole = new char[12][12];
@@ -17,6 +18,10 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
         inicializujPole();
     }
 
+    /**
+     * Metoda, ktera inicializuje pole, ve kterem se hraje
+     */
+
     private void inicializujPole() {
         for (int y = 0; y < 12; y++) {
             for (int x = 0; x < 12; x++) {
@@ -25,6 +30,11 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
         }
         pole[hracY][hracX] = '@';
     }
+
+    /**
+     * Metoda, ktera spousti ukol a vyhodnocuje, zda ma hrac dany predmet v inventari
+     * @return
+     */
     @Override
     public boolean spust() {
         Scanner scanner = new Scanner(System.in);
@@ -39,12 +49,9 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
                         jeSplnen = true;
                         return true;
                     }
-
                     System.out.print("Pohyb (w/a/s/d): ");
                     String vstup = scanner.nextLine();
-
                     if (vstup.isEmpty()) continue;
-
                     pohniHracem(vstup.charAt(0));
                 }
             }
@@ -54,6 +61,11 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
             System.out.println("K tomuto ukolu potrebujes sekacku");
         return false;
     }
+
+    /**
+     * Metoda, ktera pohybuje s hracem pomoci w/s/a/d a prepisuje policka s * na mezeru (prazdne misto)
+      * @param smer
+     */
 
     private void pohniHracem(char smer) {
         int noveX = hracX;
@@ -75,7 +87,6 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
             default:
                 return;
         }
-
         if (noveX < 0 || noveX >= 12 || noveY < 0 || noveY >= 12) {
             return;
         }
@@ -85,6 +96,11 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
         hracY = noveY;
         pole[hracY][hracX] = '@';
     }
+
+    /**
+     * Metoda, ktera kontroluje, zda je cele pole posekane
+     * @return
+     */
 
     private boolean jePosekano() {
         for (int y = 0; y < 12; y++) {
@@ -96,7 +112,9 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
         }
         return true;
     }
-
+    /**
+     * Metoda, ktera vykresli pole
+     */
     private void vykresliPole() {
         System.out.println();
         for (int y = 0; y < 12; y++) {

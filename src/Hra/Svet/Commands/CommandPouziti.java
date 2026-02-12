@@ -5,6 +5,10 @@ import Hra.Svet.Inventar;
 import Hra.Svet.Lokace;
 import Hra.Svet.SpravovaniLokaci;
 
+/**
+ * Trida, ktera slouzi k pouziti predmetu
+ */
+
 public class CommandPouziti implements Command{
 
     private Hrac hrac;
@@ -14,6 +18,12 @@ public class CommandPouziti implements Command{
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
     }
+
+    /**
+     * Metoda, ktera zjistuje, zda ma hrac dany predmet a pote tento predmet ve tride pouziva, slouzi i k odemceni lokace
+     * @param args
+     * @return
+     */
 
     @Override
     public String execute(String[] args) {

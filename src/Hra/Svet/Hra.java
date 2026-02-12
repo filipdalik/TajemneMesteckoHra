@@ -14,13 +14,19 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-
+/**
+ * Trida, ktera slouzi k vytvoreni hry a zde se vytvari vsechny nejdulezitejsi prvky hry
+ */
 public class Hra {
     private Scanner scanner = new Scanner(System.in);
     private SpravceDialogu spravceDialogu= new SpravceDialogu();
     private SpravceUkolu spravceUkolu;
 
     private String aktualniLokace = "Okraj_mesta";
+
+    /**
+     * Metoda, ktera slouzi k zacatku hry, vypisuje uvod a ziskava pomoci Scanneru jmeno hrace
+     */
     public void ZacitHru(){
         NacteniMapy nacteniMapy = new NacteniMapy();
         nacteniMapy.nacteniMapy("resources/mapa.json");

@@ -2,9 +2,11 @@ package Hra.Svet.Ukoly;
 
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
-
 import java.util.Scanner;
 
+/**
+ * Trida, ktera je ukolem do lokace ObytnaCtvrt
+ */
 public class UkolObytnaCtvrt extends Ukol{
 
     private boolean jeSplnen = false;
@@ -12,6 +14,12 @@ public class UkolObytnaCtvrt extends Ukol{
     public UkolObytnaCtvrt(Hrac hrac) {
         super("ukolObytnaCtvrt", hrac);
     }
+
+    /**
+     * Metoda, ve ktere se odehrava cely ukol, hrac musi mit v inventari predmet prkna a pak pomoci matematickeho ukolu opravuje dum
+     * Ma na to dva pokusy, po jeho splneni se prida novy predmet a naopak po nesplneni se ubira zivot
+     * @return
+     */
 
     @Override
     public boolean spust() {
@@ -55,7 +63,8 @@ public class UkolObytnaCtvrt extends Ukol{
             }
         }
 
-        System.out.println("Nepodarilo se ti dum opravit. Ziskej vice prken a zkus to znovu.");
+        System.out.println("Nepodarilo se ti dum opravit. Odecita se ti zivot.");
+        hrac.ubratZivoty(1);
         jeSplnen = true;
         return false;
     }
