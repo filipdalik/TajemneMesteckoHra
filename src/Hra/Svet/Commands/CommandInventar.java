@@ -17,7 +17,7 @@ public class CommandInventar implements Command {
     /**
      * Metoda, ktera pomoci metody ve tride Inventar vypisuje inventar hrace
      * @param args
-     * @return
+     * @return vraci inventar hrace
      */
     @Override
     public String execute(String[] args) {

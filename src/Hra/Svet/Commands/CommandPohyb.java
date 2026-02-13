@@ -21,7 +21,7 @@ public class CommandPohyb implements Command{
     /**
      * Metoda, ktera pomoci smeru vyhodnocuje, zda se muze jit timto smerem a pripadne do jake lokace se pujde a tim i hrace do teze lokace premisti
      * @param args
-     * @return
+     * @return vraci pohyb hrace
      */
 
     @Override

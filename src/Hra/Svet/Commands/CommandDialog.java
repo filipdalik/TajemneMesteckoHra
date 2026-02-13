@@ -21,7 +21,7 @@ public class CommandDialog implements Command {
     /**
      * Metoda, ktera slouzi k spusteni dialogu ve hre, vzdy podle odpovedi vybere a nebo b a pak vypise danou vetu dialogu
      * @param args
-     * @return
+     * @return vraci prubeh dialogu
      */
     @Override
     public String execute(String[] args) {

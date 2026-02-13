@@ -34,7 +34,7 @@ public class SpravceUkolu {
     /**
      * Metoda, ktera pomoci jmena hleda dany ukol
      * @param jmeno
-     * @return
+     * @return vraci ukol
      */
     public Ukol najdiUkol(String jmeno) {
         for (int i = 0; i < ukoly.size(); i++) {

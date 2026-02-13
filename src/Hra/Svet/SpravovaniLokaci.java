@@ -36,7 +36,7 @@ public class SpravovaniLokaci {
     /**
      * Metoda, ktera nam vraci predmet podle id
      * @param id
-     * @return
+     * @return vraci predmet
      */
     public Predmet getPredmet(String id) {
         for (Predmet predmet : predmety) {
@@ -50,7 +50,7 @@ public class SpravovaniLokaci {
     /**
      * Metoda, ktera nam vraci NPC podle jmena
      * @param jmeno
-     * @return
+     * @return vraci NPC
      */
 
     public Npc getNpc(String jmeno) {
@@ -65,7 +65,7 @@ public class SpravovaniLokaci {
     /**
      * Metoda, ktera nam vraci lokaci podle jmena
      * @param jmeno
-     * @return
+     * @return vraci lokaci
      */
     public Lokace getLokace(String jmeno) {
         for (Lokace lokacce : lokace) {

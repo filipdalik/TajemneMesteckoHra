@@ -20,7 +20,7 @@ public class LektvarMiniHra extends Ukol{
      * Kontroluje i to pokud jsou zadany ingredience napreskacku.
      * Po splneni pridava novy predmet.
      * Po nesplneni se hraci ubira zivot.
-     * @return
+     * @return vraci, zda hrac vyhral nebo ne
      */
 
     @Override

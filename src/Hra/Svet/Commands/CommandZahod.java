@@ -2,6 +2,10 @@ package Hra.Svet.Commands;
 
 import Hra.Svet.*;
 
+/**
+ * Trida, ktera spravuje zahozeni predmetu z inventare pomoci commandu
+ */
+
 public class CommandZahod implements Command{
 
     private Hrac hrac;
@@ -11,6 +15,12 @@ public class CommandZahod implements Command{
         this.hrac = hrac;
         this.spravovaniLokaci = spravovaniLokaci;
     }
+
+    /**
+     * Metoda, kde se resi, zda tento predmet hrac ma a pak se tento predmet zahodi
+     * @param args
+     * @return vraci zahozeni predmetu
+     */
 
     @Override
     public String execute(String[] args) {

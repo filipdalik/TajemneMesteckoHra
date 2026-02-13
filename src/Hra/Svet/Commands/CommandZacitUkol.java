@@ -24,7 +24,7 @@ public class CommandZacitUkol implements Command {
     /**
      * Metoda, ktera zjisti ukol dane lokace a ten spusti
      * @param args
-     * @return
+     * @return vraci ukol, ktery se spusti
      */
 
     @Override

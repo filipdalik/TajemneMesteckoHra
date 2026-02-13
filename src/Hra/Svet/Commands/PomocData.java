@@ -15,7 +15,7 @@ public class PomocData {
 
     /**
      * Metoda, ktera z JSONu vypisuje pomoc pomoci stringBuilderu, jsou sepisovany pod sebe
-     * @return
+     * @return vraci pomoc
      */
     public String vypsaniPomoci() {
         StringBuilder sb = new StringBuilder();

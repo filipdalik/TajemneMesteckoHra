@@ -18,7 +18,7 @@ public class CommandInfoPredmet implements Command {
     /**
      * Metoda, ktera slouzi k vypsani informaci o predmetu, o kterem to zrovna chce, musi ho mit v inventari
      * @param args
-     * @return
+     * @return ukoncuje hru nebo ne
      */
     @Override
     public String execute(String[] args) {

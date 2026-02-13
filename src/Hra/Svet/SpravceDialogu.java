@@ -19,7 +19,7 @@ public class SpravceDialogu {
 
     /**
      * Metoda, ktera nam vraci, jestli je dialog aktivni
-     * @return
+     * @return vraci true/false zda je dialog aktivni
      */
     public boolean jeDialogAktivni() {
         return dialogAktivni;
@@ -28,7 +28,7 @@ public class SpravceDialogu {
     /**
      * Metoda, ktera spusti dialog, ktery ma dane npc
      * @param npc
-     * @return
+     * @return vraci dialog
      */
     public String startDialog(Npc npc) {
         dialogAktivni = true;
@@ -39,7 +39,7 @@ public class SpravceDialogu {
     /**
      * Metoda, ktera slouzi k odpovezeni na jednu nebo druhou volbu
      * @param volba
-     * @return
+     * @return vraci odpoved
      */
     public String odpovedet(String volba) {
         if (!dialogAktivni){
@@ -55,7 +55,7 @@ public class SpravceDialogu {
 
     /**
      * Metoda, ktera ukonci dialog
-     * @return
+     * @return vraci, ze je dialog ukoncen
      */
     public String ukoncitDialog() {
         dialogAktivni = false;

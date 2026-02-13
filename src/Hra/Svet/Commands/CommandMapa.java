@@ -15,7 +15,7 @@ public class CommandMapa implements Command{
     /**
      * Metoda vypisujici mapu pomoci BufferedReader ze souboru
      * @param args
-     * @return
+     * @return vraci mapu
      */
     @Override
     public String execute(String[] args) {

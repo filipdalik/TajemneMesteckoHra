@@ -21,7 +21,7 @@ public class CommandPredmetyVLokaci implements Command{
     /**
      * Metoda, ktera vypisuje predmety v dane lokaci, ve ktere se hrac nachazi
      * @param args
-     * @return
+     * @return vraci predmety v lokaci
      */
 
     @Override

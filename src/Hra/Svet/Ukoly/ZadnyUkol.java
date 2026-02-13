@@ -14,7 +14,7 @@ public class ZadnyUkol extends Ukol{
 
     /**
      * Metoda, ktera spusti tento ukol, ale nic nedela, pouze hracovi vraci, ze v lokaci, kde se nachazi, neni zadny ukol
-     * @return
+     * @ vraci, ze v lokaci neni zadny ukol
      */
 
     @Override

@@ -43,7 +43,7 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
                 while (true) {
                     vykresliPole();
                     if (jePosekano()) {
-                        System.out.println("Vsechna tráva je posekana a tento ukol je splnen! Ziskavas bylinky od zahradnice, budou se ti hodit.");
+                        System.out.println("Vsechna trava je posekana a tento ukol je splnen! Ziskavas bylinky od zahradnice, budou se ti hodit.");
                         hrac.getInventar().pridejPredmet(new Predmet("bylinky", "Lecive rostliny na lektvar a uzdraveni nekoho.", "bylinky"));
                         hrac.zvysitPocetUkolu();
                         jeSplnen = true;
@@ -87,10 +87,9 @@ public class SekaniTravyVParkuMiniHra extends Ukol {
             default:
                 return;
         }
-        if (noveX < 0 || noveX >= 12 || noveY < 0 || noveY >= 12) {
+        if (noveX<0 || noveX>=12 || noveY<0 || noveY>=12) {
             return;
         }
-
         pole[hracY][hracX] = ' ';
         hracX = noveX;
         hracY = noveY;

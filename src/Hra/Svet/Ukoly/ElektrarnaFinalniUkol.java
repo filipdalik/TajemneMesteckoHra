@@ -17,7 +17,7 @@ public class ElektrarnaFinalniUkol extends Ukol{
 
     /**
      * Metoda, ktera dokoncuje celou hru a pokud ma hrac vsechny ukoly splnene, tak ho to pouzti do ukolu a nasledne uz jen stiskne enter a zapoji pojistky a tim hra konci a vytezi.
-     * @return
+     * @return vraci bud konec hry a nebo zpravu, ze chybi udelat ukol
      */
 
     @Override
@@ -33,9 +33,7 @@ public class ElektrarnaFinalniUkol extends Ukol{
             System.out.println("=== FINALNI UKOL: Elektrárna ===");
             System.out.println("Musis spravne zapojit pojistky a kabely.");
             System.out.println("Stiskni Enter, az budes pripraven...");
-
             sc.nextLine();
-
             System.out.println("Zapojovani probiha...");
             try {
                 Thread.sleep(2000);

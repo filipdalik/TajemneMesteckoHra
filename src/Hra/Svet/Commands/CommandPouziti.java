@@ -22,7 +22,7 @@ public class CommandPouziti implements Command{
     /**
      * Metoda, ktera zjistuje, zda ma hrac dany predmet a pote tento predmet ve tride pouziva, slouzi i k odemceni lokace
      * @param args
-     * @return
+     * @return pouzije se predmet
      */
 
     @Override

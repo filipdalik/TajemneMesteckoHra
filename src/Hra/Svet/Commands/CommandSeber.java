@@ -22,7 +22,7 @@ public class CommandSeber implements Command{
     /**
      * Metoda, ktera slouzi k sebrani predmetu, pokud se v dane lokaci nachazi, zjistuje i to, zda neni uz inventar hrace plny a pridava hracovi do inventare predmet
      * @param args
-     * @return
+     * @return vraci sebrany predmet
      */
 
     @Override

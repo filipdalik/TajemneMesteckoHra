@@ -23,7 +23,7 @@ public class UkolRadnice extends Ukol{
 
     /**
      * Metoda, ve ktere se odehrava cely ukol, zjistuje, zda hrac splnuje podminky pro spusteni ukolu a pote jej spusti a je to takova vyplnovacka textu
-     * @return
+     * @return vraci, zda hrac vyhral nebo ne
      */
     @Override
     public boolean spust() {

@@ -19,7 +19,7 @@ public class HazeniMinciDoKasnyMiniHra extends Ukol{
 
     /**
      * Metoda, ktera spravuje ukol, zde se vyhodnocuje sila hodu a podle toho to, jestli se hrac trefil do kasny, je to reseny pomoci random
-     * @return
+     * @return vraci, zda hrac vyhral nebo ne
      */
 
     @Override

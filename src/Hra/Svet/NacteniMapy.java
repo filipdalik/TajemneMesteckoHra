@@ -4,13 +4,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
-
+/**
+ * Trida, ktera nacita soubor JSON a uklada jeho obsah do tridy SpravovaniLokaci
+ */
 public class NacteniMapy {
-    /**
-     * Trida, ktera nacita soubor JSON a uklada jeho obsah do tridy SpravovaniLokaci
-     * @return
-     */
-
     public SpravovaniLokaci getSpravovaniLokaci(){
         return SpravovaniLokaci;
     }

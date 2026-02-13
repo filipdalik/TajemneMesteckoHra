@@ -20,7 +20,7 @@ public class SoubojSPolicistouMiniHra extends Ukol {
     /**
      * Metoda, ktera resi souboj hrace a policisty pomoci Scanneru a pak vyhodnocuje ruzne kombinace a tim i ubira/neubira zivoty.
      * Po porazeni ziskava hrac novy predmet klic.
-     * @return
+     * @return potvrzeni, jestli hrac vyhral nebo ne
      */
 
     @Override

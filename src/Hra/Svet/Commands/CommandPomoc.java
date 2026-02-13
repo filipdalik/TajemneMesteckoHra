@@ -13,7 +13,7 @@ public class CommandPomoc implements Command{
     /**
      * Metoda, ktera z JSONu vypisuje pomoc
      * @param args
-     * @return
+     * @return vraci pomoc
      */
     @Override
     public String execute(String[] args) {

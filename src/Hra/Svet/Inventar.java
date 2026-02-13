@@ -17,7 +17,7 @@ public class Inventar {
     /**
      * Metoda ktera prida dany predmet do inventare
      * @param predmet
-     * @return
+     * @return vraci true/false
      */
 
     public boolean pridejPredmet(Predmet predmet) {
@@ -36,7 +36,7 @@ public class Inventar {
     /**
      * Metoda, ktera zjisti, zda se nachazi v inventari dany predmet, vraci true/falce
      * @param nazev
-     * @return
+     * @return vraci true/false
      */
     public boolean obsahujePredmet(String nazev) {
         for (int i = 0; i < predmety.size(); i++) {
@@ -54,7 +54,7 @@ public class Inventar {
 
     /**
      * Metoda, ktera vypise inventar hrace
-     * @return
+     * @return vraci inventar
      */
     public String vypisInventar() {
         if (predmety.isEmpty()) {
@@ -70,7 +70,7 @@ public class Inventar {
 
     /**
      * Metoda, ktera zjisti, zda je inventar plny
-     * @return
+     * @return vraci true/false zda je plny inventar
      */
     public boolean jePlny() {
         return predmety.size() >= kapacitaBatohu;

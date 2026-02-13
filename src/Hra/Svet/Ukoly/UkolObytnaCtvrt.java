@@ -18,7 +18,7 @@ public class UkolObytnaCtvrt extends Ukol{
     /**
      * Metoda, ve ktere se odehrava cely ukol, hrac musi mit v inventari predmet prkna a pak pomoci matematickeho ukolu opravuje dum
      * Ma na to dva pokusy, po jeho splneni se prida novy predmet a naopak po nesplneni se ubira zivot
-     * @return
+     * @return vraci, zda hrac vyhral nebo ne
      */
 
     @Override
