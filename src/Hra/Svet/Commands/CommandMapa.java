@@ -19,7 +19,7 @@ public class CommandMapa implements Command{
      */
     @Override
     public String execute(String[] args) {
-        try (BufferedReader br = new BufferedReader(new FileReader("resources/celaMapa.txt"))){
+        try (BufferedReader br = new BufferedReader(new FileReader("Resources/celaMapa.txt"))){
             String radek;
             while ((radek = br.readLine()) != null){
                 System.out.println(radek);

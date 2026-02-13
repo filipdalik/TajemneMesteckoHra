@@ -10,5 +10,8 @@
         <module name="jackson-demo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Tajemne_Mestecko_Hra" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

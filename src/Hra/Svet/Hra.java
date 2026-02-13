@@ -29,7 +29,7 @@ public class Hra {
      */
     public void ZacitHru(){
         NacteniMapy nacteniMapy = new NacteniMapy();
-        nacteniMapy.nacteniMapy("resources/mapa.json");
+        nacteniMapy.nacteniMapy("Resources/mapa.json");
         Konzole konzole = new Konzole(spravceDialogu);
         String hraNadpis = "╦ ╦┬─┐┌─┐  ┌─┐  ╔╦╗┌─┐ ┬┌─┐┌┬┐┌┐┌┌─┐┌┬┐  ╔╦╗┌─┐┌─┐┌┬┐┌─┐┌─┐┬┌─┬ ┬\n" +
                 "╠═╣├┬┘├─┤  │ │   ║ ├─┤ │├┤ ││││││├┤ │││  ║║║├┤ └─┐ │ ├┤ │  ├┴┐│ │\n" +

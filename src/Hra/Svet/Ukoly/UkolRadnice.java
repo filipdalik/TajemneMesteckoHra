@@ -67,7 +67,7 @@ public class UkolRadnice extends Ukol{
         System.out.println();
         System.out.println("Odhalujes historii mesta...");
         System.out.println();
-        try (BufferedReader br = new BufferedReader(new FileReader("resources/historie.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("Resources/historie.txt"))) {
             String radek;
             while ((radek = br.readLine()) != null) {
                 System.out.println(radek);

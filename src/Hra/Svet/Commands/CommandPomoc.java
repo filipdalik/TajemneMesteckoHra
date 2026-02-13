@@ -18,7 +18,7 @@ public class CommandPomoc implements Command{
     @Override
     public String execute(String[] args) {
             ObjectMapper mapper = new ObjectMapper();
-            try (InputStream input = new FileInputStream("resources/pomoc.json")) {
+            try (InputStream input = new FileInputStream("Resources/pomoc.json")) {
 
                 PomocData data = mapper.readValue(input, PomocData.class);
                 return data.vypsaniPomoci();
