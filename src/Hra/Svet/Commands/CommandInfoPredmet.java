@@ -30,7 +30,7 @@ public class CommandInfoPredmet implements Command {
         for (int i = 0; i < inventar.getPredmety().size(); i++) {
             Predmet predmet = inventar.getPredmety().get(i);
             if (predmet.getNazev().equalsIgnoreCase(nazev)) {
-                return "Predmet: " + predmet.getNazev() + "\nPopis: " + predmet.getPopis();
+                return "Predmet: " + predmet.getNazev() + " Popis: " + predmet.getPopis();
             }
         }
 

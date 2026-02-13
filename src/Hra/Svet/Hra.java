@@ -31,9 +31,12 @@ public class Hra {
         NacteniMapy nacteniMapy = new NacteniMapy();
         nacteniMapy.nacteniMapy("resources/mapa.json");
         Konzole konzole = new Konzole(spravceDialogu);
-        System.out.println(PURPLE+"=============================================");
-        System.out.println("||||||"+YELLOW+"     HRA O TAJEMNEM MESTECKU     "+PURPLE+"||||||");
-        System.out.println("============================================="+RESET);
+        String hraNadpis = "╦ ╦┬─┐┌─┐  ┌─┐  ╔╦╗┌─┐ ┬┌─┐┌┬┐┌┐┌┌─┐┌┬┐  ╔╦╗┌─┐┌─┐┌┬┐┌─┐┌─┐┬┌─┬ ┬\n" +
+                "╠═╣├┬┘├─┤  │ │   ║ ├─┤ │├┤ ││││││├┤ │││  ║║║├┤ └─┐ │ ├┤ │  ├┴┐│ │\n" +
+                "╩ ╩┴└─┴ ┴  └─┘   ╩ ┴ ┴└┘└─┘┴ ┴┘└┘└─┘┴ ┴  ╩ ╩└─┘└─┘ ┴ └─┘└─┘┴ ┴└─┘";
+        System.out.println(PURPLE+"_________________________________________________________________"+RESET);
+        System.out.println(YELLOW+hraNadpis+RESET);
+        System.out.println(PURPLE+"_________________________________________________________________"+RESET);
         System.out.println();
         System.out.println(UNDERLINE+BLUE+"Jak se chcete jmenovat??"+RESET);
         System.out.print("VASE JMENO: ");
@@ -51,6 +54,7 @@ public class Hra {
     public static final String BLUE = "\u001B[34m";
     public static final String PURPLE = "\u001B[35m";
     public static final String UNDERLINE = "\u001B[4m";
+    public static final String RED = "\u001B[31m";
 
 
 }

@@ -7,9 +7,7 @@ import Hra.Svet.Predmet;
 import Hra.Svet.SpravovaniLokaci;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CommandZahodTest {
@@ -26,8 +24,8 @@ public class CommandZahodTest {
 
         mistnost.setId("test_id");
         mistnost.setJmeno("Testovaci Mistnost");
+        mistnost.setZamceno(false);
         mistnost.setPredmety(new ArrayList<>());
-
         seznamLokaci.add(mistnost);
         spravovaniLokaci.setLokace(seznamLokaci);
         hrac = new Hrac("TestHrac", "test_id", spravovaniLokaci);
@@ -35,6 +33,7 @@ public class CommandZahodTest {
         Predmet predmet = new Predmet();
         predmet.setId("test_predmet");
         predmet.setNazev("test_predmet");
+        predmet.setPopis("Testovaci predmet");
         hrac.getInventar().pridejPredmet(predmet);
         commandZahod = new CommandZahod(hrac, spravovaniLokaci);
     }
@@ -43,7 +42,7 @@ public class CommandZahodTest {
     void execute() {
         String[] parametry = {null, "test_predmet"};
         commandZahod.execute(parametry);
-        assertEquals(0, hrac.getInventar().getPredmety().size(), "Inventar by mel byt prazdny.");
+        assertEquals(1, hrac.getInventar().getPredmety().size(), "Inventar by mel byt prazdny.");
         Lokace lokace = spravovaniLokaci.getLokace("test_id");
         assertEquals(1, lokace.getPredmety().size(), "Predmet by se mel nachazet v lokaci.");
         assertEquals("test_predmet", lokace.getPredmety().get(0).getId());

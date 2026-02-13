@@ -1,6 +1,10 @@
 package Hra.Svet.Ukoly;
 import Hra.Svet.Hrac;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
+
+import static Hra.Svet.Hra.*;
 
 /**
  * Trida, ktera je ukolem do lokace Elektrarna a nasledne i pro konec cele hry
@@ -38,17 +42,33 @@ public class ElektrarnaFinalniUkol extends Ukol{
             }catch (InterruptedException e) {
                 System.out.println("Nastala chyba.");
             }
-            System.out.println("Pojistky a kabely byly spravne zapojeny!");
             System.out.println();
-
+            String vyhra = "____    ____ ____    ____  __    __  .______          ___      \n" +
+                    "\\   \\  /   / \\   \\  /   / |  |  |  | |   _  \\        /   \\     \n" +
+                    " \\   \\/   /   \\   \\/   /  |  |__|  | |  |_)  |      /  ^  \\    \n" +
+                    "  \\      /     \\_    _/   |   __   | |      /      /  /_\\  \\   \n" +
+                    "   \\    /        |  |     |  |  |  | |  |\\  \\----./  _____  \\  \n" +
+                    "    \\__/         |__|     |__|  |__| | _| `._____/__/     \\__\\ \n" +
+                    "                                                               ";
+            System.out.println(BLUE+vyhra+RESET);
+            System.out.println();
             System.out.println("GRATULACE! Dokoncil jsi vsechny ukoly ve vsech lokacich.");
             System.out.println("Tajemne mestecko je opet v poradku!");
             System.out.println("Tvoje dobrodruzstvi skoncilo uspesne.");
-            System.out.println("=== KONEC HRY ===");
+            System.out.println();
+            String konec = " __  ___   ______   .__   __.  _______   ______ \n" +
+                    "|  |/  /  /  __  \\  |  \\ |  | |   ____| /      |\n" +
+                    "|  '  /  |  |  |  | |   \\|  | |  |__   |  ,----'\n" +
+                    "|    <   |  |  |  | |  . `  | |   __|  |  |     \n" +
+                    "|  .  \\  |  `--'  | |  |\\   | |  |____ |  `----.\n" +
+                    "|__|\\__\\  \\______/  |__| \\__| |_______| \\______|\n" +
+                    "                                                ";
+            System.out.println(RED+konec+RESET);
+            System.out.println();
             System.exit(0);
             return true;
         }
-        System.out.println("Nejsou splneny vsechny ukoly ve vsech lokacich. Dokonc je a zkus to znovu.");
+        System.out.println("Nejsou splneny vsechny ukoly ve vsech lokacich. Dokonci je a zkus to znovu.");
         return false;
     }
 }

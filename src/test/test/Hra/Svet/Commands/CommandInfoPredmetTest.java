@@ -34,7 +34,7 @@ public class CommandInfoPredmetTest {
     }
 
     @Test
-    void execute_test() {
+    void execute() {
         String[] parametryBezNazvu = {"info"};
         String vysledekBezNazvu = commandInfoPredmet.execute(parametryBezNazvu);
         assertEquals("Musis napsat, o jaky predmet chces informace.", vysledekBezNazvu, "Spatna hlaska pri chybejicim parametru.");
@@ -45,7 +45,7 @@ public class CommandInfoPredmetTest {
         String[] parametryMec = {"info", "Mec"};
         String vysledekMec = commandInfoPredmet.execute(parametryMec);
 
-        String ocekavanyVystup = "Predmet: Mec - Popis: Ostry zelezny mec";
+        String ocekavanyVystup = "Predmet: Mec Popis: Ostry zelezny mec";
         assertEquals(ocekavanyVystup, vysledekMec, "Informace o predmetu neodpovidaji.");
 
         String[] parametryNeexistuje = {"info", "Kamen"};
