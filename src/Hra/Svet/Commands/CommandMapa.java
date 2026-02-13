@@ -1,8 +1,6 @@
 package Hra.Svet.Commands;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Trida, ktera slouzi k vypsani mapy
@@ -19,7 +17,11 @@ public class CommandMapa implements Command{
      */
     @Override
     public String execute(String[] args) {
-        try (BufferedReader br = new BufferedReader(new FileReader("Resources/celaMapa.txt"))){
+        InputStream input = CommandMapa.class.getResourceAsStream("/celaMapa.txt");
+        if(input == null) {
+            throw new RuntimeException("Nelze nacist");
+        }
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(input))){
             String radek;
             while ((radek = br.readLine()) != null){
                 System.out.println(radek);

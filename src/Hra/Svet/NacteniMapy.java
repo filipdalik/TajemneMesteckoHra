@@ -9,9 +9,9 @@ import java.io.InputStream;
  */
 public class NacteniMapy {
     public SpravovaniLokaci getSpravovaniLokaci(){
-        return SpravovaniLokaci;
+        return spravovaniLokaci;
     }
-    private SpravovaniLokaci SpravovaniLokaci;
+    private SpravovaniLokaci spravovaniLokaci;
 
     /**
      * Metoda, ktera nacita JSON pomoci jmena souboru
@@ -19,15 +19,17 @@ public class NacteniMapy {
      */
     public void nacteniMapy(String jmenoSouboru){
         ObjectMapper parser = new ObjectMapper();
-        try{
-            InputStream input = new FileInputStream(jmenoSouboru);
-            SpravovaniLokaci = parser.readValue(input, SpravovaniLokaci.class);
-            SpravovaniLokaci.init();
+        InputStream input = NacteniMapy.class.getResourceAsStream(jmenoSouboru);
+
+        try(input){
+            spravovaniLokaci = parser.readValue(input, SpravovaniLokaci.class);
+            spravovaniLokaci.init();
         } catch (FileNotFoundException e) {
-            System.out.println("Soubor nebyl nalezen. Chyba: " + e.getMessage());
+            System.out.println("Soubor nebyl nalezen. Chyba:" + e.getMessage());
         } catch (Exception e) {
             e.printStackTrace();
-        }
 
+
+        }
     }
 }

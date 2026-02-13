@@ -3,9 +3,7 @@ package Hra.Svet.Ukoly;
 import Hra.Svet.Hrac;
 import Hra.Svet.Predmet;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 
 /**
@@ -67,7 +65,11 @@ public class UkolRadnice extends Ukol{
         System.out.println();
         System.out.println("Odhalujes historii mesta...");
         System.out.println();
-        try (BufferedReader br = new BufferedReader(new FileReader("Resources/historie.txt"))) {
+        InputStream input = UkolRadnice.class.getResourceAsStream("/historie.txt");
+        if(input == null) {
+            throw new RuntimeException("Unable to load file");
+        }
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(input))) {
             String radek;
             while ((radek = br.readLine()) != null) {
                 System.out.println(radek);
